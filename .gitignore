@@ -1,1 +1,16 @@
+CultHeld.code-workspace
 CultHeld/venues/paradiso/paradiso.csv
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Unit test / coverage reports
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Other
+.DS_Store

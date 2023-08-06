@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "cultheld"
+version = "0.1.0"
+description = ""
+authors = ["Ambrosius Thomas Vermeulen <ambrosius.thomas.vermeulen@cern.ch>"]
+readme = "README.md"
+packages = [{include = "cultheld"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+pandas = "^2.0.3"
+bs4 = "^0.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.4.1"
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.mypy.overrides]]
+module = ["pandas.*", "requests.*", "bs4.*"]
+ignore_missing_imports = true

@@ -4,13 +4,38 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import numpy as np
 import datetime
-from cultheld.constants import paths
+
+def main():
+    df = retrieve(str(datetime.date.today()), 10)
+    df = post_process(df)
+
+    return df
 
 
-START_DATE = str(datetime.date.today())
-DAYS = 10
+def post_process(df):
+    df['price'] = 12
 
-def retrieve_studiok(day, month, year):
+    return df
+
+
+def retrieve(start_data, days):
+    df_day = []
+    for i in range(0, days):
+        year = start_data.split('-')[0]
+        month = start_data.split('-')[1]
+        day = int(start_data.split('-')[2])+i
+        if day < 10:
+            day = '0' + str(day)
+        else:
+            day = str(day)
+        df_day.append(api_call(day, month, year))
+
+    df = pd.concat(df_day)
+
+    return df
+
+
+def api_call(day, month, year):
     check_date = year + '-' + month + '-' + day
 
     url = "https://studio-k.nu/wp-admin/admin-ajax.php"
@@ -46,32 +71,8 @@ def retrieve_studiok(day, month, year):
     link = []
     for a in soup.find_all('a', attrs={'class':'title'}):
         title.append(a.contents[0])
-        link.append(a['href'])
-
-    
+        link.append(a['href']) 
 
     df = pd.DataFrame({'start_date_time':time, 'title':title, 'ticket_url':link})
 
     return df
-
-df_day = []
-for i in range(0, DAYS):
-    year = START_DATE.split('-')[0]
-    month = START_DATE.split('-')[1]
-    day = int(START_DATE.split('-')[2])+i
-    if day < 10:
-        day = '0' + str(day)
-    else:
-        day = str(day)
-    check_date = year + '-' + month + '-' + day
-    df_day.append(retrieve_studiok(day, month, year))
-
-df = pd.concat(df_day)
-
-df['type'] = 'Bioscoop'
-df['venue'] = 'Studio K'
-df['price'] = 12
-df = df[['type', 'venue', 'start_date_time', 'title', 'price', 'ticket_url']]
-
-df.to_csv(paths.OUTPUT + 'studiok.csv', encoding='utf-8')
-

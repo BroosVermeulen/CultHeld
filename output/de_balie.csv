@@ -1,47 +1,50 @@
-id,type,venue,start_date_time,title,price,ticket_url
-98292,Actualiteit,De Balie,2023-08-23 19:00:00,{'rendered': 'De Balie Kijkt: Bittersweet Rain'},10,https://debalie.nl/cinema/de-balie-kijkt-bittersweet-rain/tickets/11829276
-98361,Actualiteit,De Balie,2023-08-24 19:00:00,{'rendered': 'De Balie Kijkt: Tótem'},10,https://debalie.nl/cinema/de-balie-kijkt-totem/tickets/11829291
-98056,Actualiteit,De Balie,2023-08-25 17:00:00,"{'rendered': 'WCA Talk: Revolt, art &amp; feminism in Iran'}",10,https://debalie.nl/programma/wca-talk-revolt-art-feminism-in-iran-25-08-2023/tickets
-98294,Actualiteit,De Balie,2023-08-26 19:00:00,{'rendered': 'De Balie Kijkt: Seven Winters in Tehran'},10,https://debalie.nl/cinema/de-balie-kijkt-seven-winters-in-tehran/tickets/11829281
-98295,Actualiteit,De Balie,2023-08-26 21:30:00,{'rendered': 'De Balie Kijkt: Sira'},10,https://debalie.nl/cinema/de-balie-kijkt-sira/tickets/11829286
-98014,Actualiteit,De Balie,2023-09-01 19:00:00,{'rendered': 'De Balie Kijkt: Present Are the Absent'},10,https://debalie.nl/cinema/de-balie-kijkt-present-are-the-absent/tickets/11829112
-98036,Actualiteit,De Balie,2023-09-03 16:00:00,{'rendered': 'De Balie Kijkt: Inside Aut'},10,https://debalie.nl/cinema/de-balie-kijkt-inside-aut/tickets/11829196
-98558,Actualiteit,De Balie,2023-09-04 20:00:00,{'rendered': 'De Republiek'},10,https://debalie.nl/programma/de-republiek-70-04-09-2023/tickets
-98116,Actualiteit,De Balie,2023-09-07 19:30:00,{'rendered': 'De Balie Kijkt: It Is True But Not Here'},10,https://debalie.nl/cinema/de-balie-kijkt-it-is-true-but-not-here/tickets/11829210
-97899,Actualiteit,De Balie,2023-09-08 17:00:00,{'rendered': 'Plein Publiek: Jessica Gorter'},10,https://debalie.nl/programma/plein-publiek-jessica-gorter-08-09-2023/tickets
-97895,Actualiteit,De Balie,2023-09-09 20:00:00,{'rendered': 'Sahra Mani on the situation in Afghanistan'},10,https://debalie.nl/programma/sahra-mani-on-the-situation-in-afghanistan-09-09-2023/tickets
-98073,Actualiteit,De Balie,2023-09-10 20:00:00,{'rendered': 'Kritische mening of opzettelijk nepnieuws?'},10,https://debalie.nl/programma/kritische-mening-of-opzettelijk-nepnieuws-10-09-2023/tickets
-98006,Actualiteit,De Balie,2023-09-11 20:00:00,{'rendered': 'De Balie Kijkt: The American Dream'},10,https://debalie.nl/cinema/de-balie-kijkt-the-american-dream/tickets/11829111
-97900,Actualiteit,De Balie,2023-09-15 17:00:00,{'rendered': 'Plein Publiek: Marc Daniel van Biemen'},10,https://debalie.nl/programma/plein-publiek-marc-daniel-van-biemen-15-09-2023/tickets
-98074,Actualiteit,De Balie,2023-09-15 20:00:00,{'rendered': 'De danser en de monnik – Een avond over Cees Nooteboom'},10,https://debalie.nl/programma/de-danser-en-de-monnik-een-avond-over-cees-nooteboom-15-09-2023/tickets
-98497,Actualiteit,De Balie,2023-09-16 20:00:00,{'rendered': 'Inside Russia: Traitors and Heroes'},10,https://debalie.nl/programma/inside-russia-traitors-and-heroes-16-09-2023/tickets
-98117,Actualiteit,De Balie,2023-09-17 19:00:00,{'rendered': 'De Balie Kijkt: If Yes Okay + Concert Dick Verdult'},10,https://debalie.nl/cinema/de-balie-kijkt-if-yes-okay-concert-dick-verdult/tickets/11829211
-98075,Actualiteit,De Balie,2023-09-18 19:30:00,{'rendered': 'De Koplopers: Voedsel voor de metropool'},10,https://debalie.nl/programma/de-koplopers-voedsel-voor-de-metropool-18-09-2023/tickets
-98211,Actualiteit,De Balie,2023-09-20 19:30:00,{'rendered': 'Chinese beïnvloeding: reden tot zorgen of paniekzaaierij?'},10,https://debalie.nl/programma/chinese-beinvloeding-reden-tot-zorgen-of-paniekzaaierij-20-09-2023/tickets
-98363,Actualiteit,De Balie,2023-09-20 20:00:00,{'rendered': 'The Freedom Lecture: Justyna Wydrzyńska'},10,https://debalie.nl/programma/the-freedom-lecture-justyna-wydrzynska-20-09-2023/tickets
-98245,Actualiteit,De Balie,2023-09-22 17:00:00,{'rendered': 'Plein Publiek: Lucky Fonz III'},10,https://debalie.nl/programma/plein-publiek-lucky-fonz-iii-22-09-2023/tickets
-98076,Actualiteit,De Balie,2023-09-22 20:00:00,{'rendered': 'Tomorrow sex will be good again with Katherine Angel'},10,https://debalie.nl/programma/tomorrow-sex-will-be-good-again-with-katherine-angel-22-09-2023/tickets
-98362,Actualiteit,De Balie,2023-09-22 20:30:00,{'rendered': 'Achter het Libretto: Mahagonny'},10,https://debalie.nl/programma/achter-het-libretto-mahagonny-22-09-2023/tickets
-98229,Actualiteit,De Balie,2023-09-24 20:00:00,{'rendered': 'De kunst van vrede'},10,https://debalie.nl/programma/de-kunst-van-vrede-24-09-2023/tickets
-98034,Actualiteit,De Balie,2023-10-02 10:00:00,{'rendered': 'Nationaal Gesprek over Vrijheid: Mohamedou Ould Slahi'},10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-mohamedou-ould-slahi-2-02-10-2023/tickets
-98035,Actualiteit,De Balie,2023-10-02 11:00:00,{'rendered': 'Nationaal Gesprek over Vrijheid: Habtamu de Hoop'},10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-habtamu-de-hoop-3-02-10-2023/tickets
-98055,Actualiteit,De Balie,2023-10-04 20:00:00,"{'rendered': 'Margo Jefferson on Race, Class and Feminism'}",10,https://debalie.nl/programma/race-class-and-feminism-in-america-2-04-10-2023/tickets
-98063,Actualiteit,De Balie,2023-10-05 10:30:00,{'rendered': 'Nationaal Gesprek over Vrijheid: demissionair staatssecretaris Maarten van Ooijen'},10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-staatssecretaris-maarten-van-ooijen-05-10-2023/tickets
-97901,Actualiteit,De Balie,2023-10-06 17:00:00,{'rendered': 'Plein Publiek: Florentijn Hofman'},10,https://debalie.nl/programma/plein-publiek-florentijn-hofman-06-10-2023/tickets
-98037,Actualiteit,De Balie,2023-10-09 14:00:00,{'rendered': 'Nationaal Gesprek over Vrijheid: demissionair minister Carola Schouten'},10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-minister-carola-schouten-09-10-2023/tickets
-98360,Actualiteit,De Balie,2023-10-10 20:00:00,{'rendered': 'De PEN spreekt: Oeigoerse literatuur'},10,https://debalie.nl/programma/de-pen-spreekt-oeigoerse-literatuur-10-10-2023/tickets
-98049,Actualiteit,De Balie,2023-10-11 16:00:00,{'rendered': 'Nationaal Gesprek over Vrijheid: demissionair minister Dilan Yeşilgöz-Zegerius'},10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-minister-dilan-yesilgoz-zegerius-11-10-2023/tickets
-98144,Actualiteit,De Balie,2023-10-11 20:00:00,{'rendered': 'Aan de Landbouwtafel met Charles C. Mann'},10,https://debalie.nl/programma/aan-de-landbouwtafel-met-charles-c-mann-2-11-10-2023/tickets
-98087,Actualiteit,De Balie,2023-10-12 18:30:00,{'rendered': 'Opening Afrovibes festival: Liquid Traces'},10,https://debalie.nl/programma/opening-afrovibes-festival-liquid-traces-12-10-2023/tickets
-98088,Actualiteit,De Balie,2023-10-12 20:30:00,{'rendered': 'Afrovibes performance: Unbreakable'},10,https://debalie.nl/programma/afrovibes-performance-unbreakable-12-10-2023/tickets
-98089,Actualiteit,De Balie,2023-10-13 18:30:00,{'rendered': 'Afrovibes talk: generations about ‘Black’'},10,https://debalie.nl/programma/afrovibes-talk-generations-about-black-13-10-2023/tickets
-98090,Actualiteit,De Balie,2023-10-13 20:30:00,{'rendered': 'Afrovibes performance: Koulounisation'},10,https://debalie.nl/programma/afrovibes-performance-koulounisation-13-10-2023/tickets
-98091,Actualiteit,De Balie,2023-10-14 18:30:00,{'rendered': 'Afrovibes talk: art &amp; spirituality'},10,https://debalie.nl/programma/afrovibes-talk-art-spirituality-14-10-2023/tickets
-98092,Actualiteit,De Balie,2023-10-14 20:30:00,{'rendered': 'Afrovibes performance: Pourvu que la mastication ne soit pas longue'},10,https://debalie.nl/programma/afrovibes-performance-pourvu-que-la-mastication-ne-soit-pas-longue-14-10-2023/tickets
-97837,Actualiteit,De Balie,2023-10-20 17:00:00,{'rendered': 'Plein Publiek: Naaz'},10,https://debalie.nl/programma/plein-publiek-naaz-20-10-2023/tickets
-98311,Actualiteit,De Balie,2023-10-20 20:00:00,{'rendered': 'Hoe overleef ik volwassen worden? Advies van Francine Oomen'},10,https://debalie.nl/programma/hoe-overleef-ik-volwassen-worden-met-francine-oomen-20-10-2023/tickets
-98053,Actualiteit,De Balie,2023-11-03 13:00:00,{'rendered': 'Nationaal Gesprek over Vrijheid: Peter Kwint'},10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-peter-kwint-03-11-2023/tickets
-98052,Actualiteit,De Balie,2023-11-13 10:00:00,{'rendered': 'Nationaal Gesprek over Vrijheid: Farid Azarkan'},10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-farid-azarkan-2-13-11-2023/tickets
-98050,Actualiteit,De Balie,2023-11-27 11:00:00,{'rendered': 'Nationaal Gesprek over Vrijheid: demissionair minister Robbert Dijkgraaf'},10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-demissionair-minister-robbert-dijkgraaf-27-11-2023/tickets
-98171,Actualiteit,De Balie,2023-12-13 11:00:00,{'rendered': 'Nationaal Gesprek over Vrijheid: demissionair minister Kasja Ollongren'},10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-demissionair-minister-kasja-ollongren-13-12-2023/tickets
-98223,Actualiteit,De Balie,2023-12-14 20:00:00,{'rendered': '100 jaar Gerard Reve'},10,https://debalie.nl/programma/100-jaar-gerard-reve-14-12-2023/tickets
+,id,start_date_time,title,price,ticket_url,type,venue
+0,98292,2023-08-23 19:00:00,De Balie x World Cinema Amsterdam special: Bittersweet Rain,10,https://debalie.nl/cinema/de-balie-kijkt-bittersweet-rain/tickets/11829276,Actualiteit,de_balie
+1,98440,2023-08-23 21:30:00,De Balie x World Cinema Amsterdam special: Critical Zone,10,https://debalie.nl/cinema/de-balie-x-wca-critical-zone/tickets/11829345,Actualiteit,de_balie
+2,98361,2023-08-24 19:00:00,De Balie x World Cinema Amsterdam special: Tótem,10,https://debalie.nl/cinema/de-balie-kijkt-totem/tickets/11829291,Actualiteit,de_balie
+3,98448,2023-08-24 21:15:00,De Balie x World Cinema Amsterdam special: Inshallah a Boy,10,https://debalie.nl/cinema/de-balie-x-wca-inshallah-a-boy/tickets/11829346,Actualiteit,de_balie
+4,98056,2023-08-25 17:00:00,"World Cinema Amsterdam Talk: Revolt, art &#038; feminism in Iran",10,https://debalie.nl/programma/wca-talk-revolt-art-feminism-in-iran-25-08-2023/tickets,Actualiteit,de_balie
+5,98294,2023-08-26 19:00:00,De Balie x World Cinema Amsterdam special: Seven Winters in Tehran,10,https://debalie.nl/cinema/de-balie-kijkt-seven-winters-in-tehran/tickets/11829281,Actualiteit,de_balie
+6,98295,2023-08-26 21:30:00,De Balie x World Cinema Amsterdam special: Sira,10,https://debalie.nl/cinema/de-balie-kijkt-sira/tickets/11829286,Actualiteit,de_balie
+7,98014,2023-09-01 19:00:00,De Balie Kijkt: Present Are the Absent,10,https://debalie.nl/cinema/de-balie-kijkt-present-are-the-absent/tickets/11829112,Actualiteit,de_balie
+8,98036,2023-09-03 16:00:00,De Balie Kijkt: Inside Aut,10,https://debalie.nl/cinema/de-balie-kijkt-inside-aut/tickets/11829196,Actualiteit,de_balie
+9,98558,2023-09-04 20:00:00,De Republiek,10,https://debalie.nl/programma/de-republiek-70-04-09-2023/tickets,Actualiteit,de_balie
+10,98116,2023-09-07 19:30:00,De Balie Kijkt: It Is True But Not Here,10,https://debalie.nl/cinema/de-balie-kijkt-it-is-true-but-not-here/tickets/11829210,Actualiteit,de_balie
+11,97899,2023-09-08 17:00:00,Plein Publiek: Jessica Gorter,10,https://debalie.nl/programma/plein-publiek-jessica-gorter-08-09-2023/tickets,Actualiteit,de_balie
+12,97895,2023-09-09 20:00:00,Sahra Mani on the situation in Afghanistan,10,https://debalie.nl/programma/sahra-mani-on-the-situation-in-afghanistan-09-09-2023/tickets,Actualiteit,de_balie
+13,98073,2023-09-10 20:00:00,Kritische mening of opzettelijk nepnieuws?,10,https://debalie.nl/programma/kritische-mening-of-opzettelijk-nepnieuws-10-09-2023/tickets,Actualiteit,de_balie
+14,98006,2023-09-11 20:00:00,De Balie Kijkt: The American Dream,10,https://debalie.nl/cinema/de-balie-kijkt-the-american-dream/tickets/11829111,Actualiteit,de_balie
+15,97900,2023-09-15 17:00:00,Plein Publiek: Marc Daniel van Biemen,10,https://debalie.nl/programma/plein-publiek-marc-daniel-van-biemen-15-09-2023/tickets,Actualiteit,de_balie
+16,98074,2023-09-15 20:00:00,De danser en de monnik – Een avond over Cees Nooteboom,10,https://debalie.nl/programma/de-danser-en-de-monnik-een-avond-over-cees-nooteboom-15-09-2023/tickets,Actualiteit,de_balie
+17,98497,2023-09-16 20:00:00,Inside Russia: Traitors and Heroes,10,https://debalie.nl/programma/inside-russia-traitors-and-heroes-16-09-2023/tickets,Actualiteit,de_balie
+18,98117,2023-09-17 19:00:00,De Balie Kijkt: If Yes Okay + Concert Dick Verdult,10,https://debalie.nl/cinema/de-balie-kijkt-if-yes-okay-concert-dick-verdult/tickets/11829211,Actualiteit,de_balie
+19,98075,2023-09-18 19:30:00,De Koplopers: Voedsel voor de metropool,10,https://debalie.nl/programma/de-koplopers-voedsel-voor-de-metropool-18-09-2023/tickets,Actualiteit,de_balie
+20,98211,2023-09-20 19:30:00,Chinese beïnvloeding: reden tot zorgen of paniekzaaierij?,10,https://debalie.nl/programma/chinese-beinvloeding-reden-tot-zorgen-of-paniekzaaierij-20-09-2023/tickets,Actualiteit,de_balie
+21,98363,2023-09-20 20:00:00,The Freedom Lecture: Justyna Wydrzyńska,10,https://debalie.nl/programma/the-freedom-lecture-justyna-wydrzynska-20-09-2023/tickets,Actualiteit,de_balie
+22,98245,2023-09-22 17:00:00,Plein Publiek: Lucky Fonz III,10,https://debalie.nl/programma/plein-publiek-lucky-fonz-iii-22-09-2023/tickets,Actualiteit,de_balie
+23,98076,2023-09-22 20:00:00,Tomorrow sex will be good again with Katherine Angel,10,https://debalie.nl/programma/tomorrow-sex-will-be-good-again-with-katherine-angel-22-09-2023/tickets,Actualiteit,de_balie
+24,98362,2023-09-22 20:30:00,Achter het Libretto: Mahagonny,10,https://debalie.nl/programma/achter-het-libretto-mahagonny-22-09-2023/tickets,Actualiteit,de_balie
+25,98229,2023-09-24 20:00:00,De kunst van vrede,10,https://debalie.nl/programma/de-kunst-van-vrede-24-09-2023/tickets,Actualiteit,de_balie
+26,98034,2023-10-02 10:00:00,Nationaal Gesprek over Vrijheid: Mohamedou Ould Slahi,10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-mohamedou-ould-slahi-2-02-10-2023/tickets,Actualiteit,de_balie
+27,98035,2023-10-02 11:00:00,Nationaal Gesprek over Vrijheid: Habtamu de Hoop,10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-habtamu-de-hoop-3-02-10-2023/tickets,Actualiteit,de_balie
+28,98055,2023-10-04 20:00:00,"Margo Jefferson on Race, Class and Feminism",10,https://debalie.nl/programma/race-class-and-feminism-in-america-2-04-10-2023/tickets,Actualiteit,de_balie
+29,98063,2023-10-05 10:30:00,Nationaal Gesprek over Vrijheid: demissionair staatssecretaris Maarten van Ooijen,10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-staatssecretaris-maarten-van-ooijen-05-10-2023/tickets,Actualiteit,de_balie
+30,97901,2023-10-06 17:00:00,Plein Publiek: Florentijn Hofman,10,https://debalie.nl/programma/plein-publiek-florentijn-hofman-06-10-2023/tickets,Actualiteit,de_balie
+31,98477,2023-10-06 20:15:00,Filmische Intimiteit: Mag ik je Aanraken?,10,https://debalie.nl/programma/filmische-intimiteit-mag-ik-je-aanraken-06-10-2023/tickets,Actualiteit,de_balie
+32,98037,2023-10-09 14:00:00,Nationaal Gesprek over Vrijheid: demissionair minister Carola Schouten,10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-minister-carola-schouten-09-10-2023/tickets,Actualiteit,de_balie
+33,98360,2023-10-10 20:00:00,De PEN spreekt: Oeigoerse literatuur,10,https://debalie.nl/programma/de-pen-spreekt-oeigoerse-literatuur-10-10-2023/tickets,Actualiteit,de_balie
+34,98049,2023-10-11 16:00:00,Nationaal Gesprek over Vrijheid: demissionair minister Dilan Yeşilgöz-Zegerius,10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-minister-dilan-yesilgoz-zegerius-11-10-2023/tickets,Actualiteit,de_balie
+35,98144,2023-10-11 20:00:00,Aan de Landbouwtafel met Charles C. Mann,10,https://debalie.nl/programma/aan-de-landbouwtafel-met-charles-c-mann-2-11-10-2023/tickets,Actualiteit,de_balie
+36,98087,2023-10-12 18:30:00,Opening Afrovibes festival: Liquid Traces,10,https://debalie.nl/programma/opening-afrovibes-festival-liquid-traces-12-10-2023/tickets,Actualiteit,de_balie
+37,98088,2023-10-12 20:30:00,Afrovibes performance: Unbreakable,10,https://debalie.nl/programma/afrovibes-performance-unbreakable-12-10-2023/tickets,Actualiteit,de_balie
+38,98089,2023-10-13 18:30:00,Afrovibes talk: generations about ‘Black’,10,https://debalie.nl/programma/afrovibes-talk-generations-about-black-13-10-2023/tickets,Actualiteit,de_balie
+39,98090,2023-10-13 20:30:00,Afrovibes performance: Koulounisation,10,https://debalie.nl/programma/afrovibes-performance-koulounisation-13-10-2023/tickets,Actualiteit,de_balie
+40,98091,2023-10-14 18:30:00,Afrovibes talk: art &amp; spirituality,10,https://debalie.nl/programma/afrovibes-talk-art-spirituality-14-10-2023/tickets,Actualiteit,de_balie
+41,98092,2023-10-14 20:30:00,Afrovibes performance: Pourvu que la mastication ne soit pas longue,10,https://debalie.nl/programma/afrovibes-performance-pourvu-que-la-mastication-ne-soit-pas-longue-14-10-2023/tickets,Actualiteit,de_balie
+42,97837,2023-10-20 17:00:00,Plein Publiek: Naaz,10,https://debalie.nl/programma/plein-publiek-naaz-20-10-2023/tickets,Actualiteit,de_balie
+43,98311,2023-10-20 20:00:00,Hoe overleef ik volwassen worden? Advies van Francine Oomen,10,https://debalie.nl/programma/hoe-overleef-ik-volwassen-worden-met-francine-oomen-20-10-2023/tickets,Actualiteit,de_balie
+44,98053,2023-11-03 13:00:00,Nationaal Gesprek over Vrijheid: Peter Kwint,10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-peter-kwint-03-11-2023/tickets,Actualiteit,de_balie
+45,98052,2023-11-13 10:00:00,Nationaal Gesprek over Vrijheid: Farid Azarkan,10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-farid-azarkan-2-13-11-2023/tickets,Actualiteit,de_balie
+46,98050,2023-11-27 11:00:00,Nationaal Gesprek over Vrijheid: demissionair minister Robbert Dijkgraaf,10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-demissionair-minister-robbert-dijkgraaf-27-11-2023/tickets,Actualiteit,de_balie
+47,98171,2023-12-13 11:00:00,Nationaal Gesprek over Vrijheid: demissionair minister Kasja Ollongren,10,https://debalie.nl/programma/nationaal-gesprek-over-vrijheid-demissionair-minister-kasja-ollongren-13-12-2023/tickets,Actualiteit,de_balie
+48,98223,2023-12-14 20:00:00,100 jaar Gerard Reve,10,https://debalie.nl/programma/100-jaar-gerard-reve-14-12-2023/tickets,Actualiteit,de_balie

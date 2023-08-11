@@ -3,9 +3,13 @@ from dataclasses import dataclass
 from typing import Callable
 
 from cultheld.configuration.utils.utils_configuration import AllInstances
-import cultheld.venues.de_balie as de_balie
-import cultheld.venues.studiok as studiok
-import cultheld.venues.paradiso as paradiso
+import cultheld.venues.actualiteit.de_balie as de_balie
+import cultheld.venues.bioscoop.studiok as studiok
+import cultheld.venues.concert.paradiso as paradiso
+import cultheld.venues.bioscoop.fchyena as fchyena
+import cultheld.venues.concert.melkweg as melkweg
+import cultheld.venues.concert.concertgebouw as concertgebouw
+import cultheld.venues.theater.carre as carre
 
 
 ROOT_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -59,4 +63,36 @@ venue_003 = ConfigurationVenues(
     type='Concert',
     output_folder=ROOT_DIR + '/../output/paradiso.csv',
     function=paradiso.main,
+)
+
+venue_004 = ConfigurationVenues(
+    ID='venue_004',
+    venue='fchyena',
+    type='Bioscoop',
+    output_folder=ROOT_DIR + '/../output/fchyena.csv',
+    function=fchyena.main,
+)
+
+venue_005 = ConfigurationVenues(
+    ID='venue_005',
+    venue='melkweg',
+    type='Concert',
+    output_folder=ROOT_DIR + '/../output/melkweg.csv',
+    function=melkweg.main,
+)
+
+venue_006 = ConfigurationVenues(
+    ID='venue_006',
+    venue='concertgebouw',
+    type='Concert',
+    output_folder=ROOT_DIR + '/../output/concertgebouw.csv',
+    function=concertgebouw.main,
+)
+
+venue_007 = ConfigurationVenues(
+    ID='venue_007',
+    venue='carre',
+    type='Theater',
+    output_folder=ROOT_DIR + '/../output/carre.csv',
+    function=carre.main,
 )

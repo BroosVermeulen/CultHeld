@@ -13,7 +13,7 @@ def main():
         df = ouput_venue(df, config.ID)
         df_venues.append(df)
     
-    output_df = pd.concat(df_venues)
+    output_df = pd.concat(df_venues, ignore_index=True)
     output_df = output_df[['venue', 'type', 'start_date_time', 'title', 'price', 'ticket_url']].reset_index()
 
     output_df.to_csv(ROOT_DIR + '/../output/combined_venues.csv', encoding='utf-8')

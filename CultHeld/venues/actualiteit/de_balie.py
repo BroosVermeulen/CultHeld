@@ -18,6 +18,7 @@ def post_process(df):
     df = df_title.join(df_date, how='outer')
 
     df['title'] = [d.get('rendered') for d in df.title]
+    
     df['day'] = df['date'].str.split(' ').str[1].astype(int)
     df['day'] = np.where(
         df['day'] < 10, 
@@ -39,6 +40,8 @@ def post_process(df):
         'december':'12'
     })
     df['year'] = df['date'].str.split(' ').str[3]
+    df['time'] = np.where(df['time'] == False, '00:00', df['time'])   # NEEDS TO BE FIXED
+
     df['start_date_time'] = pd.to_datetime(
         df['day'].astype(str) + "-" + df['month'].astype(str) + "-" + df['year'].astype(str) + " " + df['time'],
         format='%d-%m-%Y %H:%M'

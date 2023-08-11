@@ -1,0 +1,263 @@
+,index,start_date_time,title,price,ticket_url,type,venue
+0,0,2023-08-11T21:30:00.000000Z,Fiesta Macumba,30,http://www.melkweg.nl//nl/agenda/fiesta-macumba-11-08-2023,Concert,melkweg
+1,1,2023-08-12T21:59:00.000000Z,Encore,30,http://www.melkweg.nl//nl/agenda/encore-12-08-2023,Concert,melkweg
+2,2,2023-08-13T16:30:00.000000Z,Heaven Shall Burn,30,http://www.melkweg.nl//nl/agenda/heaven-shall-burn-13-08-2023,Concert,melkweg
+3,3,2023-08-14T17:30:00.000000Z,Danny Ocean,30,http://www.melkweg.nl//nl/agenda/danny-ocean-14-08-2023,Concert,melkweg
+4,4,2023-08-14T21:00:00.000000Z,Cheeky Monday: NAVIGATOR!,30,http://www.melkweg.nl//nl/agenda/cheeky-monday-14-08-2023,Concert,melkweg
+5,5,2023-08-15T16:30:00.000000Z,Pennywise,30,http://www.melkweg.nl//nl/agenda/pennywise-15-08-2023,Concert,melkweg
+6,6,2023-08-15T21:30:00.000000Z,Techno Tuesday,30,http://www.melkweg.nl//nl/agenda/techno-tuesday-15-08-2023,Concert,melkweg
+7,7,2023-08-18T21:30:00.000000Z,Gowtu x La Rouge: White Edition,30,http://www.melkweg.nl//nl/agenda/gowtu-18-08-2023,Concert,melkweg
+8,8,2023-08-19T21:59:00.000000Z,Encore,30,http://www.melkweg.nl//nl/agenda/encore-19-08-2023,Concert,melkweg
+9,9,2023-08-21T21:00:00.000000Z,Cheeky Monday: CROSSY & AFT RECORDS!,30,http://www.melkweg.nl//nl/agenda/cheeky-monday-21-08-2023,Concert,melkweg
+10,10,2023-08-22T21:30:00.000000Z,Techno Tuesday,30,http://www.melkweg.nl//nl/agenda/techno-tuesday-22-08-2023,Concert,melkweg
+11,11,2023-08-25T21:00:00.000000Z,Final Party ESN,30,http://www.melkweg.nl//nl/agenda/esn-intreefeest-25-08-2023,Concert,melkweg
+12,12,2023-08-25T21:30:00.000000Z,Reggae Party,30,http://www.melkweg.nl//nl/agenda/reggae-party-25-08-2023,Concert,melkweg
+13,13,2023-08-26T21:00:00.000000Z,Kiss All Hipsters,30,http://www.melkweg.nl//nl/agenda/kiss-all-hipsters-26-08-2023,Concert,melkweg
+14,14,2023-08-26T21:59:00.000000Z,Encore,30,http://www.melkweg.nl//nl/agenda/encore-26-08-2023,Concert,melkweg
+15,15,2023-08-27T11:00:00.000000Z,Ailey (2021),30,http://www.melkweg.nl//nl/agenda/ailey-27-08-2023,Concert,melkweg
+16,16,2023-08-27T13:00:00.000000Z,Seminar: The History of Hip-hop Dance in the Netherlands,30,http://www.melkweg.nl//nl/agenda/seminar-the-history-of-hiphop-dance-in-the-netherlands-27-08-2023,Concert,melkweg
+17,17,2023-08-27T17:00:00.000000Z,PSYCHO / YoungBoss,30,http://www.melkweg.nl//nl/agenda/psycho-young-boss-27-08-2023,Concert,melkweg
+18,18,2023-08-27T17:30:00.000000Z,Daniel Romano's Outfit,30,http://www.melkweg.nl//nl/agenda/daniel-romanos-outfit-27-08-2023,Concert,melkweg
+19,19,2023-08-28T19:45:00.000000Z,Unitas Introfeest,30,http://www.melkweg.nl//nl/agenda/unitas-introfeest-28-08-2023,Concert,melkweg
+20,20,2023-08-28T21:00:00.000000Z,Cheeky Monday: COCO BRYCE!,30,http://www.melkweg.nl//nl/agenda/cheeky-monday-28-08-2023,Concert,melkweg
+21,21,2023-08-29T20:00:00.000000Z,Slotfeest VU IDEE week,30,http://www.melkweg.nl//nl/agenda/slotfeest-vu-idee-week-29-08-2023,Concert,melkweg
+22,22,2023-08-30T21:30:00.000000Z,Techno Tuesday,30,http://www.melkweg.nl//nl/agenda/techno-tuesday-30-08-2023,Concert,melkweg
+23,23,2023-08-31T15:00:00.000000Z,Wat is die MO - luistersessie,30,http://www.melkweg.nl//nl/agenda/wat-is-die-mo-luistersessie-31-08-2023,Concert,melkweg
+24,24,2023-09-01T18:00:00.000000Z,Model Man,30,http://www.melkweg.nl//nl/agenda/model-man-01-09-2023,Concert,melkweg
+25,25,2023-09-01T21:00:00.000000Z,Eindfeest Intree UvA,30,http://www.melkweg.nl//nl/agenda/eindfeest-intree-uva-01-09-2023,Concert,melkweg
+26,26,2023-09-02T17:00:00.000000Z,VroegZat,30,http://www.melkweg.nl//nl/agenda/vroegzat-02-09-2023,Concert,melkweg
+27,27,2023-09-02T18:00:00.000000Z,Netta,30,http://www.melkweg.nl//nl/agenda/netta-02-09-2023,Concert,melkweg
+28,28,2023-09-02T21:30:00.000000Z,Olá Brazil!,30,http://www.melkweg.nl//nl/agenda/ola-brazil-02-09-2023,Concert,melkweg
+29,29,2023-09-03T17:00:00.000000Z,Jon Pardi,30,http://www.melkweg.nl//nl/agenda/jon-pardi-03-09-2023,Concert,melkweg
+30,30,2023-09-05T17:00:00.000000Z,Cobra Man,30,http://www.melkweg.nl//nl/agenda/cobra-man-05-09-2023,Concert,melkweg
+31,31,2023-09-05T21:30:00.000000Z,Techno Tuesday,30,http://www.melkweg.nl//nl/agenda/techno-tuesday-05-09-2023,Concert,melkweg
+32,32,2023-09-06T17:00:00.000000Z,RUEL,30,http://www.melkweg.nl//nl/agenda/ruel-06-09-2023,Concert,melkweg
+33,33,2023-09-06T17:30:00.000000Z,Robert Jon & The Wreck,30,http://www.melkweg.nl//nl/agenda/robert-jon-the-wreck-06-09-2023,Concert,melkweg
+34,34,2023-09-07T15:00:00.000000Z,Arty Party,30,http://www.melkweg.nl//nl/agenda/arty-party-07-09-2023,Concert,melkweg
+35,35,2023-09-07T15:00:00.000000Z,Arty Party Photography Graduates 2023,30,http://www.melkweg.nl//nl/agenda/arty-party-photography-graduates-07-09-2023,Concert,melkweg
+36,36,2023-09-08T09:00:00.000000Z,Arty Party Photography Graduates 2023,30,http://www.melkweg.nl//nl/agenda/arty-party-photography-graduates-2023-08-09-2023,Concert,melkweg
+37,37,2023-09-08T17:30:00.000000Z,Morgan Wade,30,http://www.melkweg.nl//nl/agenda/morgan-wade-08-09-2023,Concert,melkweg
+38,38,2023-09-08T18:00:00.000000Z,Sean McConnell,30,http://www.melkweg.nl//nl/agenda/sean-mcconnell-08-09-2023,Concert,melkweg
+39,39,2023-09-09T21:30:00.000000Z,Hard Attack,30,http://www.melkweg.nl//nl/agenda/hard-attack-09-09-2023,Concert,melkweg
+40,40,2023-09-10T17:30:00.000000Z,Noor,30,http://www.melkweg.nl//nl/agenda/noor-10-09-2023,Concert,melkweg
+41,41,2023-09-11T17:00:00.000000Z,Olivia Dean,30,http://www.melkweg.nl//nl/agenda/olivia-dean-11-09-2023,Concert,melkweg
+42,42,2023-09-12T17:00:00.000000Z,Amaarae,30,http://www.melkweg.nl//nl/agenda/amaarae-12-09-2023,Concert,melkweg
+43,43,2023-09-12T17:00:00.000000Z,Strangeways,30,http://www.melkweg.nl//nl/agenda/strangeways-12-09-2023,Concert,melkweg
+44,44,2023-09-12T17:30:00.000000Z,Charley Crockett,30,http://www.melkweg.nl//nl/agenda/charley-crocket-12-09-2023,Concert,melkweg
+45,45,2023-09-12T21:30:00.000000Z,Techno Tuesday,30,http://www.melkweg.nl//nl/agenda/techno-tuesday-12-09-2023,Concert,melkweg
+46,46,2023-09-13T17:00:00.000000Z,Juanes,30,http://www.melkweg.nl//nl/agenda/juanes-13-09-2023,Concert,melkweg
+47,47,2023-09-13T17:00:00.000000Z,Have You Got It Yet? The Story of Syd Barrett and Pink Floyd (2023),30,http://www.melkweg.nl//nl/agenda/have-you-got-it-yet-the-story-of-syd-barrett-and-pink-floyd-2023-13-09-2023,Concert,melkweg
+48,48,2023-09-13T17:30:00.000000Z,NEFFEX,30,http://www.melkweg.nl//nl/agenda/neffex-13-09-2023,Concert,melkweg
+49,49,2023-09-13T18:00:00.000000Z,Two Lanes,30,http://www.melkweg.nl//nl/agenda/two-lanes-13-09-2023,Concert,melkweg
+50,50,2023-09-14T16:30:00.000000Z,Parels uit de Bijlmer,30,http://www.melkweg.nl//nl/agenda/parels-uit-de-bijlmer-14-09-2023,Concert,melkweg
+51,51,2023-09-15T18:00:00.000000Z,RADAR: Send me Flowers / George & The Rams,30,http://www.melkweg.nl//nl/agenda/radar-15-09-2023,Concert,melkweg
+52,52,2023-09-15T18:00:00.000000Z,Vidéothèque - Video Art in Cinema,30,http://www.melkweg.nl//nl/agenda/videotheque-video-art-in-cinema-15-09-2023,Concert,melkweg
+53,53,2023-09-15T21:30:00.000000Z,Pyxls,30,http://www.melkweg.nl//nl/agenda/pyxls-15-09-2023,Concert,melkweg
+54,54,2023-09-15T21:59:00.000000Z,No Diggity,30,http://www.melkweg.nl//nl/agenda/no-diggity-15-09-2023,Concert,melkweg
+55,55,2023-09-16T17:00:00.000000Z,Jin-Roh: The Wolf Brigade (1999),30,http://www.melkweg.nl//nl/agenda/jin-roh-the-wolf-brigade-1999-16-09-2023,Concert,melkweg
+56,56,2023-09-16T18:00:00.000000Z,Die Nerven,30,http://www.melkweg.nl//nl/agenda/die-nerven-16-09-2023,Concert,melkweg
+57,57,2023-09-16T19:15:00.000000Z,Have You Got It Yet? The Story of Syd Barrett and Pink Floyd (2023),30,http://www.melkweg.nl//nl/agenda/have-you-got-it-yet-the-story-of-syd-barrett-and-pink-floyd-2023-16-09-2023,Concert,melkweg
+58,58,2023-09-16T21:30:00.000000Z,This Never Happened,30,http://www.melkweg.nl//nl/agenda/this-never-happened-16-09-2023,Concert,melkweg
+59,59,2023-09-17T15:00:00.000000Z,Have You Got It Yet? The Story of Syd Barrett and Pink Floyd (2023),30,http://www.melkweg.nl//nl/agenda/have-you-got-it-yet-the-story-of-syd-barrett-and-pink-floyd-2023-17-09-2023,Concert,melkweg
+60,60,2023-09-17T17:00:00.000000Z,Lauren Spencer Smith: Mirror Tour,30,http://www.melkweg.nl//nl/agenda/lauren-spencer-smith-17-09-2023,Concert,melkweg
+61,61,2023-09-17T17:30:00.000000Z,grentperez,30,http://www.melkweg.nl//nl/agenda/grentperez-17-09-2023,Concert,melkweg
+62,62,2023-09-18T17:00:00.000000Z,Lauren Spencer Smith: Mirror Tour (extra show),30,http://www.melkweg.nl//nl/agenda/succes-lauren-spencer-smith-18-09-2023,Concert,melkweg
+63,63,2023-09-18T17:30:00.000000Z,Loveless,30,http://www.melkweg.nl//nl/agenda/loveless-18-09-2023,Concert,melkweg
+64,64,2023-09-20T17:30:00.000000Z,Holly Humberstone,30,http://www.melkweg.nl//nl/agenda/holly-humberstone-20-09-2023,Concert,melkweg
+65,65,2023-09-20T18:00:00.000000Z,Demob Happy,30,http://www.melkweg.nl//nl/agenda/demob-happy-20-09-2023,Concert,melkweg
+66,66,2023-09-20T21:30:00.000000Z,Techno Tuesday,30,http://www.melkweg.nl//nl/agenda/techno-tuesday-20-09-2023,Concert,melkweg
+67,67,2023-09-21T17:00:00.000000Z,Alceu Valença,30,http://www.melkweg.nl//nl/agenda/alceu-valenca-21-09-2023,Concert,melkweg
+68,68,2023-09-21T17:00:00.000000Z,We Are Public Awards,30,http://www.melkweg.nl//nl/agenda/we-are-public-awards-21-09-2023,Concert,melkweg
+69,69,2023-09-22T18:00:00.000000Z,Noah Reid,30,http://www.melkweg.nl//nl/agenda/noah-reid-22-09-2023,Concert,melkweg
+70,70,2023-09-22T21:30:00.000000Z,Afrolosjes vs. Gowtu,30,http://www.melkweg.nl//nl/agenda/afrolosjes-vs-gowtu-22-09-2023,Concert,melkweg
+71,71,2023-09-22T21:59:00.000000Z,Moksi & Friends,30,http://www.melkweg.nl//nl/agenda/moksi-friends-22-09-2023,Concert,melkweg
+72,72,2023-09-23T17:00:00.000000Z,K.Flay,30,http://www.melkweg.nl//nl/agenda/kflay-23-09-2023,Concert,melkweg
+73,73,2023-09-23T17:30:00.000000Z,Powfu,30,http://www.melkweg.nl//nl/agenda/powfu-23-09-2023,Concert,melkweg
+74,74,2023-09-23T17:30:00.000000Z,Roc Marciano,30,http://www.melkweg.nl//nl/agenda/roc-marciano-23-09-2023,Concert,melkweg
+75,75,2023-09-23T18:00:00.000000Z,spill tab,30,http://www.melkweg.nl//nl/agenda/spill-tab-23-09-2023,Concert,melkweg
+76,76,2023-09-23T21:30:00.000000Z,OBSCUUR: FRANKY-B / NOVAH / E.A.,30,http://www.melkweg.nl//nl/agenda/obscuur-franky-b-novah-ea-23-09-2023,Concert,melkweg
+77,77,2023-09-24T17:30:00.000000Z,Drukwerk,30,http://www.melkweg.nl//nl/agenda/drukwerk-24-09-2023,Concert,melkweg
+78,78,2023-09-24T18:00:00.000000Z,Ron Pope,30,http://www.melkweg.nl//nl/agenda/ron-pope-24-09-2023,Concert,melkweg
+79,79,2023-09-25T17:30:00.000000Z,Ben Barnes,30,http://www.melkweg.nl//nl/agenda/ben-barnes-25-09-2023,Concert,melkweg
+80,80,2023-09-25T18:00:00.000000Z,Jazmin Bean,30,http://www.melkweg.nl//nl/agenda/jazmin-bean-25-09-2023,Concert,melkweg
+81,81,2023-09-26T17:30:00.000000Z,Westside Boogie,30,http://www.melkweg.nl//nl/agenda/westside-boogie-26-09-2023,Concert,melkweg
+82,82,2023-09-26T21:30:00.000000Z,Techno Tuesday,30,http://www.melkweg.nl//nl/agenda/techno-tuesday-26-09-2023,Concert,melkweg
+83,83,2023-09-27T17:00:00.000000Z,Holly Johnson,30,http://www.melkweg.nl//nl/agenda/holly-johnson-27-09-2023,Concert,melkweg
+84,84,2023-09-27T17:30:00.000000Z,Alex Serra & Totidub,30,http://www.melkweg.nl//nl/agenda/alex-serra-27-09-2023,Concert,melkweg
+85,85,2023-09-27T18:00:00.000000Z,Curtis Waters,30,http://www.melkweg.nl//nl/agenda/curtis-waters-27-09-2023,Concert,melkweg
+86,86,2023-09-28T17:00:00.000000Z,Highly Suspect,30,http://www.melkweg.nl//nl/agenda/highly-suspect-28-09-2023,Concert,melkweg
+87,87,2023-09-28T17:00:00.000000Z,TWRP,30,http://www.melkweg.nl//nl/agenda/twrp-28-09-2023,Concert,melkweg
+88,88,2023-09-28T18:00:00.000000Z,Petite Noir,30,http://www.melkweg.nl//nl/agenda/petite-noir-28-09-2023,Concert,melkweg
+89,89,2023-09-29T17:00:00.000000Z,Dominic Fike,30,http://www.melkweg.nl//nl/agenda/dominic-fike-29-09-2023,Concert,melkweg
+90,90,2023-09-29T18:00:00.000000Z,Ari Abdul,30,http://www.melkweg.nl//nl/agenda/ari-abdul-29-09-2023,Concert,melkweg
+91,91,2023-09-29T21:30:00.000000Z,90's NOW,30,http://www.melkweg.nl//nl/agenda/90s-now-29-09-2023,Concert,melkweg
+92,92,2023-09-29T21:59:00.000000Z,Vunzige Deuntjes,30,http://www.melkweg.nl//nl/agenda/vunzige-deuntjes-29-09-2023,Concert,melkweg
+93,93,2023-09-30T10:00:00.000000Z,Kunstbende,30,http://www.melkweg.nl//nl/agenda/kunstbende-30-09-2023,Concert,melkweg
+94,94,2023-09-30T21:59:00.000000Z,Curbi Presents: Seeing is Believing,30,http://www.melkweg.nl//nl/agenda/curbi-30-09-2023,Concert,melkweg
+95,95,2023-10-02T17:30:00.000000Z,Wegz,30,http://www.melkweg.nl//nl/agenda/wegz-29-09-2023,Concert,melkweg
+96,96,2023-10-03T17:00:00.000000Z,Noize MC,30,http://www.melkweg.nl//nl/agenda/noize-mc-03-10-2023,Concert,melkweg
+97,97,2023-10-03T17:30:00.000000Z,Bebel Gilberto,30,http://www.melkweg.nl//nl/agenda/bebel-gilberto-03-10-2023,Concert,melkweg
+98,98,2023-10-04T17:00:00.000000Z,We Three,30,http://www.melkweg.nl//nl/agenda/we-three-04-10-2023,Concert,melkweg
+99,99,2023-10-04T18:00:00.000000Z,Quessswho,30,http://www.melkweg.nl//nl/agenda/quessswho-04-10-2023,Concert,melkweg
+100,100,2023-10-05T17:30:00.000000Z,20 jaar Pop,30,http://www.melkweg.nl//nl/agenda/20-jaar-pop-05-10-2023,Concert,melkweg
+101,101,2023-10-06T17:00:00.000000Z,GRANDSON,30,http://www.melkweg.nl//nl/agenda/grandson-06-10-2023,Concert,melkweg
+102,102,2023-10-06T17:30:00.000000Z,BLÜ EYES,30,http://www.melkweg.nl//nl/agenda/blu-eyes-06-10-2023,Concert,melkweg
+103,103,2023-10-06T18:00:00.000000Z,Ragz Originale,30,http://www.melkweg.nl//nl/agenda/ragz-originale-06-10-2023,Concert,melkweg
+104,104,2023-10-06T21:30:00.000000Z,80's Verantwoord,30,http://www.melkweg.nl//nl/agenda/80s-verantwoord-06-10-2023,Concert,melkweg
+105,105,2023-10-07T17:00:00.000000Z,JP Cooper,30,http://www.melkweg.nl//nl/agenda/jp-cooper-07-10-2023,Concert,melkweg
+106,106,2023-10-07T17:30:00.000000Z,Far Caspian,30,http://www.melkweg.nl//nl/agenda/far-caspian-07-10-2023,Concert,melkweg
+107,107,2023-10-07T18:00:00.000000Z,Kevin Devine,30,http://www.melkweg.nl//nl/agenda/kevin-devine-07-10-2023,Concert,melkweg
+108,108,2023-10-07T21:30:00.000000Z,Femmazing 90/00's,30,http://www.melkweg.nl//nl/agenda/femmazing-9000s-07-10-2023,Concert,melkweg
+109,109,2023-10-08T17:00:00.000000Z,Gracie Abrams,30,http://www.melkweg.nl//nl/agenda/gracie-abrams-08-10-2023,Concert,melkweg
+110,110,2023-10-08T17:30:00.000000Z,Therapy?,30,http://www.melkweg.nl//nl/agenda/therapy-08-10-2023,Concert,melkweg
+111,111,2023-10-09T17:00:00.000000Z,K-Trap,30,http://www.melkweg.nl//nl/agenda/k-trap-09-10-2023,Concert,melkweg
+112,112,2023-10-10T17:00:00.000000Z,NIKI,30,http://www.melkweg.nl//nl/agenda/niki-10-10-2023,Concert,melkweg
+113,113,2023-10-10T17:30:00.000000Z,thuy,30,http://www.melkweg.nl//nl/agenda/thuy-10-10-2023,Concert,melkweg
+114,114,2023-10-11T17:00:00.000000Z,Larry June,30,http://www.melkweg.nl//nl/agenda/larry-june-11-10-2023,Concert,melkweg
+115,115,2023-10-11T17:30:00.000000Z,Lauren Mayberry,30,http://www.melkweg.nl//nl/agenda/lauren-mayberry-11-10-2023,Concert,melkweg
+116,116,2023-10-11T18:00:00.000000Z,Maeta,30,http://www.melkweg.nl//nl/agenda/maeta-11-10-2023,Concert,melkweg
+117,117,2023-10-12T17:00:00.000000Z,Poets Of The Fall,30,http://www.melkweg.nl//nl/agenda/poets-of-the-fall-12-10-2023,Concert,melkweg
+118,118,2023-10-12T17:30:00.000000Z,Lovelytheband,30,http://www.melkweg.nl//nl/agenda/lovelytheband-12-10-2023,Concert,melkweg
+119,119,2023-10-13T17:00:00.000000Z,Kid Francescoli,30,http://www.melkweg.nl//nl/agenda/kid-francescoli-13-10-2023,Concert,melkweg
+120,120,2023-10-13T17:30:00.000000Z,Guè Pequeno,30,http://www.melkweg.nl//nl/agenda/gue-13-10-2023,Concert,melkweg
+121,121,2023-10-13T18:00:00.000000Z,emir taha,30,http://www.melkweg.nl//nl/agenda/emir-taha-13-10-2023,Concert,melkweg
+122,122,2023-10-14T17:00:00.000000Z,Mind Game (2004),30,http://www.melkweg.nl//nl/agenda/mind-game-2004-14-10-2023,Concert,melkweg
+123,123,2023-10-14T17:00:00.000000Z,Soen,30,http://www.melkweg.nl//nl/agenda/soen-14-10-2023,Concert,melkweg
+124,124,2023-10-14T17:30:00.000000Z,Benedict Cork,30,http://www.melkweg.nl//nl/agenda/benedict-cork-14-10-2023,Concert,melkweg
+125,125,2023-10-14T17:30:00.000000Z,The High Kings,30,http://www.melkweg.nl//nl/agenda/the-high-kings-14-10-2023,Concert,melkweg
+126,126,2023-10-15T17:00:00.000000Z,Frank Boeijen,30,http://www.melkweg.nl//nl/agenda/frank-boeijen-15-10-2023,Concert,melkweg
+127,127,2023-10-16T17:00:00.000000Z,100 gecs,30,http://www.melkweg.nl//nl/agenda/100-gecs-16-10-2023,Concert,melkweg
+128,128,2023-10-16T17:30:00.000000Z,LaBrassBanda,30,http://www.melkweg.nl//nl/agenda/labrassbanda-16-10-2023,Concert,melkweg
+129,129,2023-10-17T17:00:00.000000Z,Capleton,30,http://www.melkweg.nl//nl/agenda/capleton-17-10-2023,Concert,melkweg
+130,130,2023-10-18T16:30:00.000000Z,Tinlicker & Metropole Orkest,30,http://www.melkweg.nl//nl/agenda/tinlicker-metropole-orkest-18-10-2023,Concert,melkweg
+131,131,2023-10-18T17:00:00.000000Z,Decolonizing The Loop,30,http://www.melkweg.nl//nl/agenda/decolonizing-the-loop-18-10-2023,Concert,melkweg
+132,132,2023-10-18T17:30:00.000000Z,Martin Kohlstedt,30,http://www.melkweg.nl//nl/agenda/martin-kohlstedt-18-10-2023,Concert,melkweg
+133,133,2023-10-18T21:00:00.000000Z,Oliver Heldens,30,http://www.melkweg.nl//nl/agenda/oliver-heldens-18-10-2023,Concert,melkweg
+134,134,2023-10-18T21:00:00.000000Z,Coldharbour Recordings Night,30,http://www.melkweg.nl//nl/agenda/coldharbour-recordings-night-18-10-2023,Concert,melkweg
+135,135,2023-10-19T16:00:00.000000Z,"RADAR x ADE: Mayo, Lenxi, Okitap & Kimmah",30,http://www.melkweg.nl//nl/agenda/radar-x-ade-19-10-2023,Concert,melkweg
+136,136,2023-10-19T17:00:00.000000Z,Kraak & Smaak (Live XL),30,http://www.melkweg.nl//nl/agenda/kraak-smaak-live-19-10-2023,Concert,melkweg
+137,137,2023-10-19T17:30:00.000000Z,MATHAME,30,http://www.melkweg.nl//nl/agenda/mathame-19-10-2023,Concert,melkweg
+138,138,2023-10-19T21:00:00.000000Z,The North Quarter Label Night,30,http://www.melkweg.nl//nl/agenda/the-north-quarter-label-night-19-10-2023,Concert,melkweg
+139,139,2023-10-19T21:00:00.000000Z,Monstercat Showcase,30,http://www.melkweg.nl//nl/agenda/monstercat-showcase-19-10-2023,Concert,melkweg
+140,140,2023-10-19T21:00:00.000000Z,Colin Benders Invites: Blawan Live / JakoJako e.a.,30,http://www.melkweg.nl//nl/agenda/colin-benders-invites-19-10-2023,Concert,melkweg
+141,141,2023-10-20T16:00:00.000000Z,IMANU presents PARADISE,30,http://www.melkweg.nl//nl/agenda/imanu-presents-paradise-20-10-2023,Concert,melkweg
+142,142,2023-10-20T16:30:00.000000Z,Illenium Live,30,http://www.melkweg.nl//nl/agenda/illenium-live-20-10-2023,Concert,melkweg
+143,143,2023-10-20T17:00:00.000000Z,COBRAH,30,http://www.melkweg.nl//nl/agenda/cobrah-20-10-2023,Concert,melkweg
+144,144,2023-10-20T17:30:00.000000Z,Magma Nights: ECHT!,30,http://www.melkweg.nl//nl/agenda/echt-20-10-2023,Concert,melkweg
+145,145,2023-10-20T21:00:00.000000Z,Dave Clarke Presents: British Murder Boys / Dasha Rush / Oscar Mulero e.a.,30,http://www.melkweg.nl//nl/agenda/dave-clarke-presents-20-10-2023,Concert,melkweg
+146,146,2023-10-20T21:30:00.000000Z,Markus Schulz Open To Close,30,http://www.melkweg.nl//nl/agenda/markus-schulz-open-to-close-20-10-2023,Concert,melkweg
+147,147,2023-10-20T21:30:00.000000Z,Future House Music presents The Myth of NYX,30,http://www.melkweg.nl//nl/agenda/future-house-music-presents-the-myth-of-nyx-20-10-2023,Concert,melkweg
+148,148,2023-10-21T16:00:00.000000Z,Paul van Dyk pres. VENTURE X,30,http://www.melkweg.nl//nl/agenda/paul-van-dyk-21-10-2023,Concert,melkweg
+149,149,2023-10-21T17:00:00.000000Z,GoldFish,30,http://www.melkweg.nl//nl/agenda/goldfish-21-10-2023,Concert,melkweg
+150,150,2023-10-21T17:00:00.000000Z,Joost van Bellen Gaat Door: Lynks & WaqWaq Kingdom,30,http://www.melkweg.nl//nl/agenda/joost-van-bellen-gaat-door-lynks-waqwaq-kingdom-21-10-2023,Concert,melkweg
+151,151,2023-10-21T21:30:00.000000Z,Hospitality: Metrik / P Money & Whiney / Flava D e.a.,30,http://www.melkweg.nl//nl/agenda/hospitality-21-10-2023,Concert,melkweg
+152,152,2023-10-21T21:59:00.000000Z,Sam Feldt presents a Heartfeldt ADE,30,http://www.melkweg.nl//nl/agenda/sam-feldt-presents-a-heartfeldt-21-10-2023,Concert,melkweg
+153,153,2023-10-22T18:00:00.000000Z,Indo Warehouse,30,http://www.melkweg.nl//nl/agenda/indo-warehouse-22-10-2023,Concert,melkweg
+154,154,2023-10-22T19:00:00.000000Z,Hush.,30,http://www.melkweg.nl//nl/agenda/hush-22-10-2023,Concert,melkweg
+155,155,2023-10-25T17:00:00.000000Z,City and Colour,30,http://www.melkweg.nl//nl/agenda/city-colour-25-10-2023,Concert,melkweg
+156,156,2023-10-25T17:30:00.000000Z,King Buffalo,30,http://www.melkweg.nl//nl/agenda/king-buffalo-2023-25-10-2023,Concert,melkweg
+157,157,2023-10-25T18:00:00.000000Z,Kxllswxtch,30,http://www.melkweg.nl//nl/agenda/kxllswxtch-25-10-2023,Concert,melkweg
+158,158,2023-10-26T17:00:00.000000Z,Morad,30,http://www.melkweg.nl//nl/agenda/morad-26-10-2023,Concert,melkweg
+159,159,2023-10-26T18:00:00.000000Z,Aime Simone,30,http://www.melkweg.nl//nl/agenda/aime-simone-26-10-2023,Concert,melkweg
+160,160,2023-10-27T13:15:00.000000Z,MeneerTjes SlodDe & VoS in de Geluidentuin,30,http://www.melkweg.nl//nl/agenda/meneertjes-slodde-vos-in-de-geluidentuin-27-10-2023,Concert,melkweg
+161,161,2023-10-27T15:30:00.000000Z,Thy Art Is Murder,30,http://www.melkweg.nl//nl/agenda/thy-art-is-murder-27-10-2023,Concert,melkweg
+162,162,2023-10-27T17:30:00.000000Z,Letz Zep,30,http://www.melkweg.nl//nl/agenda/letz-zep-27-10-2023,Concert,melkweg
+163,163,2023-10-28T17:00:00.000000Z,Leela James,30,http://www.melkweg.nl//nl/agenda/leela-james-28-10-2023,Concert,melkweg
+164,164,2023-10-28T17:00:00.000000Z,De Derde Helft Tour powered by Albino Sports,30,http://www.melkweg.nl//nl/agenda/de-derde-helft-tour-powered-by-albino-sports-28-10-2023,Concert,melkweg
+165,165,2023-10-28T17:30:00.000000Z,Bob Vylan,30,http://www.melkweg.nl//nl/agenda/bob-vylan-28-10-2023,Concert,melkweg
+166,166,2023-10-29T11:00:00.000000Z,Brainwash Festival,30,http://www.melkweg.nl//nl/agenda/brainwash-festival-29-10-2023-1,Concert,melkweg
+167,167,2023-10-31T18:30:00.000000Z,Flavien Berger,30,http://www.melkweg.nl//nl/agenda/flavien-berger-31-10-2023,Concert,melkweg
+168,168,2023-11-01T18:00:00.000000Z,Mac Ayres,30,http://www.melkweg.nl//nl/agenda/mac-ayres-01-11-2023,Concert,melkweg
+169,169,2023-11-01T19:00:00.000000Z,Avalon Emerson & the Charm,30,http://www.melkweg.nl//nl/agenda/avalon-emerson-and-the-charm-01-11-2023,Concert,melkweg
+170,170,2023-11-02T18:30:00.000000Z,Vieux Farka Touré,30,http://www.melkweg.nl//nl/agenda/vieux-farka-toure-02-11-2023,Concert,melkweg
+171,171,2023-11-03T17:30:00.000000Z,Stray From The Path,30,http://www.melkweg.nl//nl/agenda/stray-from-the-path-03-11-2023,Concert,melkweg
+172,172,2023-11-03T19:00:00.000000Z,Feiertag (LIVE),30,http://www.melkweg.nl//nl/agenda/feiertag-03-11-2023,Concert,melkweg
+173,173,2023-11-03T22:30:00.000000Z,30 Something,30,http://www.melkweg.nl//nl/agenda/30-something-03-11-2023,Concert,melkweg
+174,174,2023-11-03T22:59:00.000000Z,Afrolosjes x Jamrock,30,http://www.melkweg.nl//nl/agenda/afrolosjes-x-jamrock-03-11-2023,Concert,melkweg
+175,175,2023-11-04T18:00:00.000000Z,The Comedy Store,30,http://www.melkweg.nl//nl/agenda/comedy-store-04-11-2023,Concert,melkweg
+176,176,2023-11-04T19:00:00.000000Z,Madison McFerrin,30,http://www.melkweg.nl//nl/agenda/madison-mcferrin-04-11-2023,Concert,melkweg
+177,177,2023-11-05T18:30:00.000000Z,Empire State Bastard,30,http://www.melkweg.nl//nl/agenda/empire-state-bastard-05-11-2023,Concert,melkweg
+178,178,2023-11-06T18:30:00.000000Z,Lloyd Cole,30,http://www.melkweg.nl//nl/agenda/lloyd-cole-06-11-2023,Concert,melkweg
+179,179,2023-11-07T18:00:00.000000Z,Yaeji,30,http://www.melkweg.nl//nl/agenda/yaeji-07-11-2023,Concert,melkweg
+180,180,2023-11-07T18:30:00.000000Z,GOOSE (USA),30,http://www.melkweg.nl//nl/agenda/goose-usa-07-11-2023,Concert,melkweg
+181,181,2023-11-08T18:00:00.000000Z,Sammy Rae & The Friends,30,http://www.melkweg.nl//nl/agenda/sammy-rae-the-friends-08-11-2023,Concert,melkweg
+182,182,2023-11-08T18:30:00.000000Z,PLK,30,http://www.melkweg.nl//nl/agenda/plk-08-11-2023,Concert,melkweg
+183,183,2023-11-09T18:00:00.000000Z,Rival Sons,30,http://www.melkweg.nl//nl/agenda/rival-sons-09-11-2023,Concert,melkweg
+184,184,2023-11-09T18:30:00.000000Z,Fox Stevenson (Live) - Extra Show,30,http://www.melkweg.nl//nl/agenda/fox-stevenson-09-11-2023,Concert,melkweg
+185,185,2023-11-10T18:00:00.000000Z,Dub FX,30,http://www.melkweg.nl//nl/agenda/dub-fx-10-11-2023,Concert,melkweg
+186,186,2023-11-10T18:30:00.000000Z,Fox Stevenson (Live),30,http://www.melkweg.nl//nl/agenda/fox-stevenson-10-11-2023,Concert,melkweg
+187,187,2023-11-10T22:30:00.000000Z,Garage Nation in the Dam,30,http://www.melkweg.nl//nl/agenda/garage-nation-in-the-dam-10-11-2023,Concert,melkweg
+188,188,2023-11-11T18:00:00.000000Z,Against the Current,30,http://www.melkweg.nl//nl/agenda/against-the-current-11-11-2023,Concert,melkweg
+189,189,2023-11-12T18:00:00.000000Z,Bruno Major,30,http://www.melkweg.nl//nl/agenda/bruno-major-12-11-2023,Concert,melkweg
+190,190,2023-11-12T18:30:00.000000Z,Briston Maroney,30,http://www.melkweg.nl//nl/agenda/briston-maroney-12-11-2023,Concert,melkweg
+191,191,2023-11-12T19:00:00.000000Z,Sofia Kourtesis (Live),30,http://www.melkweg.nl//nl/agenda/sofia-kourtesis-12-11-2023,Concert,melkweg
+192,192,2023-11-13T18:00:00.000000Z,Scary Pockets,30,http://www.melkweg.nl//nl/agenda/scary-pockets-13-11-2023,Concert,melkweg
+193,193,2023-11-13T18:30:00.000000Z,Bombino,30,http://www.melkweg.nl//nl/agenda/bombino-13-11-2023,Concert,melkweg
+194,194,2023-11-14T18:00:00.000000Z,Bakar,30,http://www.melkweg.nl//nl/agenda/bakar-14-11-2023,Concert,melkweg
+195,195,2023-11-14T18:30:00.000000Z,Laibach,30,http://www.melkweg.nl//nl/agenda/laibach-14-11-2023,Concert,melkweg
+196,196,2023-11-15T18:30:00.000000Z,Jake Isaac,30,http://www.melkweg.nl//nl/agenda/jake-isaac-15-11-2023,Concert,melkweg
+197,197,2023-11-16T18:30:00.000000Z,Pablo Brooks,30,http://www.melkweg.nl//nl/agenda/pablo-brooks-16-11-2023,Concert,melkweg
+198,198,2023-11-16T19:00:00.000000Z,BLANKO,30,http://www.melkweg.nl//nl/agenda/blanko-16-11-2023,Concert,melkweg
+199,199,2023-11-17T22:30:00.000000Z,ILOVEHOUSEMUSIC presents LEGENDS OF HOUSE,30,http://www.melkweg.nl//nl/agenda/ilovehousemusic-presents-legends-of-house-17-11-2023,Concert,melkweg
+200,200,2023-11-18T18:00:00.000000Z,Only Yesterday (1991),30,http://www.melkweg.nl//nl/agenda/only-yesterday-1991-18-11-2023,Concert,melkweg
+201,201,2023-11-18T18:00:00.000000Z,The Reytons,30,http://www.melkweg.nl//nl/agenda/the-reytons-18-11-2023,Concert,melkweg
+202,202,2023-11-19T18:00:00.000000Z,Raye,30,http://www.melkweg.nl//nl/agenda/raye-19-11-2023,Concert,melkweg
+203,203,2023-11-19T18:30:00.000000Z,Danko Jones,30,http://www.melkweg.nl//nl/agenda/danko-jones-19-11-2023,Concert,melkweg
+204,204,2023-11-20T18:00:00.000000Z,Dylan,30,http://www.melkweg.nl//nl/agenda/dylan-20-11-2023,Concert,melkweg
+205,205,2023-11-20T18:30:00.000000Z,Smash Into Pieces,30,http://www.melkweg.nl//nl/agenda/smash-into-pieces-20-11-2023,Concert,melkweg
+206,206,2023-11-21T18:00:00.000000Z,Little Dragon,30,http://www.melkweg.nl//nl/agenda/little-dragon-21-11-2023,Concert,melkweg
+207,207,2023-11-21T18:30:00.000000Z,Gilsons,30,http://www.melkweg.nl//nl/agenda/gilsons-21-11-2023,Concert,melkweg
+208,208,2023-11-22T18:30:00.000000Z,Red Axes (Live),30,http://www.melkweg.nl//nl/agenda/red-axes-22-11-2023,Concert,melkweg
+209,209,2023-11-22T19:00:00.000000Z,Nabihah Iqbal,30,http://www.melkweg.nl//nl/agenda/nabihah-iqbal-22-11-2023,Concert,melkweg
+210,210,2023-11-23T18:00:00.000000Z,Shantel & Bucovina Club Soundsystem,30,http://www.melkweg.nl//nl/agenda/shantel-bucovina-club-soundsystem-23-11-2023,Concert,melkweg
+211,211,2023-11-23T18:30:00.000000Z,Electric Six,30,http://www.melkweg.nl//nl/agenda/electric-six-23-11-2023,Concert,melkweg
+212,212,2023-11-23T19:00:00.000000Z,Pa Sheehy,30,http://www.melkweg.nl//nl/agenda/pa-sheehy-23-11-2023,Concert,melkweg
+213,213,2023-11-24T18:00:00.000000Z,The Darkness,30,http://www.melkweg.nl//nl/agenda/the-darkness-24-11-2023,Concert,melkweg
+214,214,2023-11-24T18:30:00.000000Z,Punk Rock Factory,30,http://www.melkweg.nl//nl/agenda/punk-rock-factory-24-11-2023,Concert,melkweg
+215,215,2023-11-24T19:00:00.000000Z,Mia Nicolai,30,http://www.melkweg.nl//nl/agenda/mia-nicolai-24-11-2023,Concert,melkweg
+216,216,2023-11-26T18:00:00.000000Z,Ashnikko,30,http://www.melkweg.nl//nl/agenda/ashnikko-26-11-2023,Concert,melkweg
+217,217,2023-11-27T18:00:00.000000Z,Bombay Bicycle Club,30,http://www.melkweg.nl//nl/agenda/bombay-bicycle-club-27-11-2023,Concert,melkweg
+218,218,2023-11-28T18:00:00.000000Z,Bombay Bicycle Club,30,http://www.melkweg.nl//nl/agenda/bombay-bicycle-club-28-11-2023,Concert,melkweg
+219,219,2023-11-29T18:00:00.000000Z,Picture This / Tom Gregory,30,http://www.melkweg.nl//nl/agenda/picture-thistom-gregory-29-11-2023,Concert,melkweg
+220,220,2023-11-29T18:30:00.000000Z,Blank Banshee,30,http://www.melkweg.nl//nl/agenda/blank-banshee-29-11-2023,Concert,melkweg
+221,221,2023-11-30T18:30:00.000000Z,Orange Skyline,30,http://www.melkweg.nl//nl/agenda/orange-skyline-30-11-2023,Concert,melkweg
+222,222,2023-11-30T19:00:00.000000Z,Nette Meisjes,30,http://www.melkweg.nl//nl/agenda/nette-meisjes-30-11-2023,Concert,melkweg
+223,223,2023-12-01T18:00:00.000000Z,Fear Factory,30,http://www.melkweg.nl//nl/agenda/fear-factory-01-12-2023,Concert,melkweg
+224,224,2023-12-03T16:00:00.000000Z,Sam Tompkins,30,http://www.melkweg.nl//nl/agenda/sam-tompkins-03-12-2023,Concert,melkweg
+225,225,2023-12-04T18:00:00.000000Z,Popcaan,30,http://www.melkweg.nl//nl/agenda/popcaan-04-12-2023,Concert,melkweg
+226,226,2023-12-05T18:00:00.000000Z,Popcaan,30,http://www.melkweg.nl//nl/agenda/popcaan-05-12-2023,Concert,melkweg
+227,227,2023-12-06T18:00:00.000000Z,Joker Out,30,http://www.melkweg.nl//nl/agenda/joker-out-06-12-2023,Concert,melkweg
+228,228,2023-12-07T18:30:00.000000Z,Pip Blom,30,http://www.melkweg.nl//nl/agenda/pip-blom-07-12-2023,Concert,melkweg
+229,229,2023-12-07T19:00:00.000000Z,Moncrieff,30,http://www.melkweg.nl//nl/agenda/moncrieff-07-12-2023,Concert,melkweg
+230,230,2023-12-08T18:00:00.000000Z,Sertab Erener,30,http://www.melkweg.nl//nl/agenda/sertab-erener-08-12-2023,Concert,melkweg
+231,231,2023-12-08T18:30:00.000000Z,Yeule,30,http://www.melkweg.nl//nl/agenda/yeule-08-12-2023,Concert,melkweg
+232,232,2023-12-08T22:30:00.000000Z,Zer00's Heroes,30,http://www.melkweg.nl//nl/agenda/zer00s-heroes-08-12-2023,Concert,melkweg
+233,233,2023-12-09T16:30:00.000000Z,The Amity Affliction,30,http://www.melkweg.nl//nl/agenda/the-amity-affliction-09-12-2023,Concert,melkweg
+234,234,2023-12-09T19:00:00.000000Z,The Sherlocks,30,http://www.melkweg.nl//nl/agenda/the-sherlocks-09-12-2023,Concert,melkweg
+235,235,2023-12-10T18:00:00.000000Z,La Pegatina,30,http://www.melkweg.nl//nl/agenda/la-pegatina-10-12-2023,Concert,melkweg
+236,236,2023-12-12T18:00:00.000000Z,Extreme,30,http://www.melkweg.nl//nl/agenda/extreme-12-12-2023,Concert,melkweg
+237,237,2023-12-13T18:00:00.000000Z,Elias Mazian (Live),30,http://www.melkweg.nl//nl/agenda/elias-mazian-13-12-2023,Concert,melkweg
+238,238,2023-12-15T17:30:00.000000Z,Skindred,30,http://www.melkweg.nl//nl/agenda/skindred-15-12-2023,Concert,melkweg
+239,239,2023-12-15T18:30:00.000000Z,SERA,30,http://www.melkweg.nl//nl/agenda/sera-15-12-2023,Concert,melkweg
+240,240,2023-12-16T19:00:00.000000Z,Jet van der Steen + Lola Cedès,30,http://www.melkweg.nl//nl/agenda/jet-van-der-steen-lola-cedes-16-12-2023,Concert,melkweg
+241,241,2023-12-16T22:30:00.000000Z,Desi Fusion: Bollywood Night Out,30,http://www.melkweg.nl//nl/agenda/desi-fusion-bollywood-night-out-16-12-2023,Concert,melkweg
+242,242,2023-12-17T18:00:00.000000Z,New Model Army,30,http://www.melkweg.nl//nl/agenda/new-model-army-17-12-2023,Concert,melkweg
+243,243,2023-12-21T18:00:00.000000Z,Clean Pete,30,http://www.melkweg.nl//nl/agenda/clean-pete-21-12-2023,Concert,melkweg
+244,244,2024-01-19T18:00:00.000000Z,No Barrier,30,http://www.melkweg.nl//nl/agenda/no-barrier-19-01-2024,Concert,melkweg
+245,245,2024-01-31T19:00:00.000000Z,Cornelia Jakobs,30,http://www.melkweg.nl//nl/agenda/cornelia-jakobs-31-01-2024,Concert,melkweg
+246,246,2024-02-02T22:59:00.000000Z,The Taylor & Harry Night,30,http://www.melkweg.nl//nl/agenda/the-taylor-harry-night-02-02-2024,Concert,melkweg
+247,247,2024-02-05T18:30:00.000000Z,grentperez,30,http://www.melkweg.nl//nl/agenda/grentperez-05-02-2024,Concert,melkweg
+248,248,2024-02-08T18:30:00.000000Z,French 79,30,http://www.melkweg.nl//nl/agenda/french-79-08-02-2024,Concert,melkweg
+249,249,2024-02-13T18:30:00.000000Z,Alessandra,30,http://www.melkweg.nl//nl/agenda/alessandra-13-02-2024,Concert,melkweg
+250,250,2024-02-15T19:00:00.000000Z,Southall,30,http://www.melkweg.nl//nl/agenda/southall-15-02-2024,Concert,melkweg
+251,251,2024-02-19T18:00:00.000000Z,Reneé Rapp,30,http://www.melkweg.nl//nl/agenda/renee-rapp-19-02-2024,Concert,melkweg
+252,252,2024-02-25T18:00:00.000000Z,6LACK,30,http://www.melkweg.nl//nl/agenda/6lack-25-02-2024,Concert,melkweg
+253,253,2024-02-26T18:00:00.000000Z,6LACK,30,http://www.melkweg.nl//nl/agenda/6lack-26-02-2024,Concert,melkweg
+254,254,2024-03-19T18:00:00.000000Z,Eric Nam,30,http://www.melkweg.nl//nl/agenda/eric-nam-19-03-2024,Concert,melkweg
+255,255,2024-03-20T18:00:00.000000Z,Eric Nam,30,http://www.melkweg.nl//nl/agenda/eric-nam-20-03-2024,Concert,melkweg
+256,256,2024-03-28T19:00:00.000000Z,SuperDB,30,http://www.melkweg.nl//nl/agenda/superdb-28-03-2024,Concert,melkweg
+257,257,2024-04-06T16:00:00.000000Z,Lord Of The Lost,30,http://www.melkweg.nl//nl/agenda/lord-of-the-lost-06-04-2024,Concert,melkweg
+258,258,2024-05-11T17:30:00.000000Z,Rootsriders feat. Mo Ali,30,http://www.melkweg.nl//nl/agenda/rootsriders-feat-mo-ali-11-05-2024,Concert,melkweg
+259,259,2024-05-19T17:00:00.000000Z,Yemi Alade,30,http://www.melkweg.nl//nl/agenda/yemi-alade-19-05-2024,Concert,melkweg
+260,260,2024-05-22T17:00:00.000000Z,Rakim,30,http://www.melkweg.nl//nl/agenda/rakim-22-05-2024-1,Concert,melkweg
+261,261,2024-05-23T17:30:00.000000Z,ElGrandeToto,30,http://www.melkweg.nl//nl/agenda/elgrandetoto-23-05-2024,Concert,melkweg

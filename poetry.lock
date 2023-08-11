@@ -210,6 +210,19 @@ files = [
 toml = ["tomli"]
 
 [[package]]
+name = "flatten-json"
+version = "0.1.13"
+description = "Flatten JSON objects"
+optional = false
+python-versions = "*"
+files = [
+    {file = "flatten_json-0.1.13.tar.gz", hash = "sha256:ee352333e8293e957ccb1b4597a111fc4f6da88ab74b8cb3f8f51eed1e12f500"},
+]
+
+[package.dependencies]
+six = "*"
+
+[[package]]
 name = "idna"
 version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -561,4 +574,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "8e6166db7184af26aea2c8e90ded5fdebf0f694762b0f9f2f8dc98a9f3e408cf"
+content-hash = "37bbe8bf69f4c4f0164f383d7372db74501142e4735b78dc2b89be48a68dcb48"

@@ -1,51 +1,76 @@
 ,index,start_date_time,title,price,ticket_url,type,venue
-0,0,2023-08-06 17:10:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
-1,1,2023-08-06 17:15:00,Le paradis (ENG SUBS),12,https://studio-k.nu/film/le-paradis-eng-subs/,Bioscoop,studiok
-2,2,2023-08-06 18:05:00,Mission: Impossible – Dead Reckoning Part One,12,https://studio-k.nu/film/mission-impossible-dead-reckoning-part-one/,Bioscoop,studiok
-3,3,2023-08-06 19:10:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
-4,4,2023-08-06 20:40:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
-5,5,2023-08-06 21:15:00,Asteroid City,12,https://studio-k.nu/film/asteroid-city/,Bioscoop,studiok
-6,6,2023-08-06 21:30:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
-7,0,2023-08-07 11:40:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
-8,1,2023-08-07 11:50:00,Le paradis,12,https://studio-k.nu/film/le-paradis/,Bioscoop,studiok
-9,2,2023-08-07 11:55:00,Mission: Impossible – Dead Reckoning Part One,12,https://studio-k.nu/film/mission-impossible-dead-reckoning-part-one/,Bioscoop,studiok
-10,3,2023-08-07 13:45:00,Asteroid City,12,https://studio-k.nu/film/asteroid-city/,Bioscoop,studiok
-11,4,2023-08-07 14:00:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
-12,5,2023-08-07 15:05:00,Elemental (NL),12,https://studio-k.nu/film/elemental-nl/,Bioscoop,studiok
-13,6,2023-08-07 16:00:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
-14,7,2023-08-07 17:15:00,Le paradis (ENG SUBS),12,https://studio-k.nu/film/le-paradis-eng-subs/,Bioscoop,studiok
-15,8,2023-08-07 17:30:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
-16,9,2023-08-07 18:20:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
-17,10,2023-08-07 19:10:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
-18,11,2023-08-07 20:40:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
-19,12,2023-08-07 21:00:00,How to Blow Up a Pipeline,12,https://studio-k.nu/film/how-to-blow-up-a-pipeline/,Bioscoop,studiok
-20,13,2023-08-07 21:30:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
-21,0,2023-08-08 11:50:00,Le paradis,12,https://studio-k.nu/film/le-paradis/,Bioscoop,studiok
-22,1,2023-08-08 11:55:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
-23,2,2023-08-08 11:55:00,Mission: Impossible – Dead Reckoning Part One,12,https://studio-k.nu/film/mission-impossible-dead-reckoning-part-one/,Bioscoop,studiok
-24,3,2023-08-08 13:45:00,Asteroid City,12,https://studio-k.nu/film/asteroid-city/,Bioscoop,studiok
-25,4,2023-08-08 14:15:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
-26,5,2023-08-08 15:05:00,Elemental (NL),12,https://studio-k.nu/film/elemental-nl/,Bioscoop,studiok
-27,6,2023-08-08 16:00:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
-28,7,2023-08-08 17:15:00,Le paradis (ENG SUBS),12,https://studio-k.nu/film/le-paradis-eng-subs/,Bioscoop,studiok
-29,8,2023-08-08 17:45:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
-30,9,2023-08-08 18:20:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
-31,10,2023-08-08 19:10:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
-32,11,2023-08-08 20:40:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
-33,12,2023-08-08 21:15:00,Past Lives (ENG SUBS),12,https://studio-k.nu/film/past-lives-eng-subs/,Bioscoop,studiok
-34,13,2023-08-08 21:30:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
-35,0,2023-08-09 11:40:00,Mission: Impossible – Dead Reckoning Part One,12,https://studio-k.nu/film/mission-impossible-dead-reckoning-part-one/,Bioscoop,studiok
-36,1,2023-08-09 11:50:00,Le paradis,12,https://studio-k.nu/film/le-paradis/,Bioscoop,studiok
-37,2,2023-08-09 12:10:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
-38,3,2023-08-09 13:45:00,Asteroid City,12,https://studio-k.nu/film/asteroid-city/,Bioscoop,studiok
-39,4,2023-08-09 14:30:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
-40,5,2023-08-09 14:50:00,Elemental (NL),12,https://studio-k.nu/film/elemental-nl/,Bioscoop,studiok
-41,6,2023-08-09 16:00:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
-42,7,2023-08-09 17:00:00,Le paradis (ENG SUBS),12,https://studio-k.nu/film/le-paradis-eng-subs/,Bioscoop,studiok
-43,8,2023-08-09 18:00:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
-44,9,2023-08-09 18:20:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
-45,10,2023-08-09 18:55:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
-46,11,2023-08-09 20:40:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
-47,12,2023-08-09 21:15:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
-48,13,2023-08-09 21:30:00,Woman in the Dunes (1964) • TALES FROM THE DESERT,12,https://studio-k.nu/film/woman-in-the-dunes-1964-tales-from-the-desert/,Bioscoop,studiok
-49,0,2023-08-12 16:40:00,La Piscine (1969) • TALES FROM THE DESERT,12,https://studio-k.nu/film/la-piscine-1969-tales-from-the-desert/,Bioscoop,studiok
+0,0,2023-08-11 20:40:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
+1,1,2023-08-11 21:20:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+2,2,2023-08-11 21:40:00,L’Ultima Notte di Amore (ENG SUBS),12,https://studio-k.nu/film/lultima-notte-di-amore-eng-subs/,Bioscoop,studiok
+3,0,2023-08-12 11:30:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
+4,1,2023-08-12 11:55:00,Riceboy Sleeps,12,https://studio-k.nu/film/riceboy-sleeps/,Bioscoop,studiok
+5,2,2023-08-12 12:30:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+6,3,2023-08-12 14:20:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+7,4,2023-08-12 14:50:00,L’Ultima Notte di Amore,12,https://studio-k.nu/film/lultima-notte-di-amore/,Bioscoop,studiok
+8,5,2023-08-12 15:00:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
+9,6,2023-08-12 16:40:00,La Piscine (1969) • TALES FROM THE DESERT,12,https://studio-k.nu/film/la-piscine-1969-tales-from-the-desert/,Bioscoop,studiok
+10,7,2023-08-12 17:20:00,Le paradis (ENG SUBS),12,https://studio-k.nu/film/le-paradis-eng-subs/,Bioscoop,studiok
+11,8,2023-08-12 18:30:00,Asteroid City,12,https://studio-k.nu/film/asteroid-city/,Bioscoop,studiok
+12,9,2023-08-12 19:00:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+13,10,2023-08-12 19:15:00,Riceboy Sleeps (ENG SUBS),12,https://studio-k.nu/film/riceboy-sleeps-eng-subs/,Bioscoop,studiok
+14,11,2023-08-12 20:45:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
+15,12,2023-08-12 21:20:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+16,13,2023-08-12 21:40:00,L’Ultima Notte di Amore,12,https://studio-k.nu/film/lultima-notte-di-amore/,Bioscoop,studiok
+17,0,2023-08-13 11:30:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
+18,1,2023-08-13 12:10:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+19,2,2023-08-13 12:20:00,Riceboy Sleeps,12,https://studio-k.nu/film/riceboy-sleeps/,Bioscoop,studiok
+20,3,2023-08-13 14:30:00,Elemental (NL),12,https://studio-k.nu/film/elemental-nl/,Bioscoop,studiok
+21,4,2023-08-13 14:45:00,L’Ultima Notte di Amore,12,https://studio-k.nu/film/lultima-notte-di-amore/,Bioscoop,studiok
+22,5,2023-08-13 15:00:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
+23,6,2023-08-13 16:40:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+24,7,2023-08-13 17:15:00,Le paradis (ENG SUBS),12,https://studio-k.nu/film/le-paradis-eng-subs/,Bioscoop,studiok
+25,8,2023-08-13 18:30:00,Asteroid City,12,https://studio-k.nu/film/asteroid-city/,Bioscoop,studiok
+26,9,2023-08-13 19:00:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+27,10,2023-08-13 19:15:00,Riceboy Sleeps,12,https://studio-k.nu/film/riceboy-sleeps/,Bioscoop,studiok
+28,11,2023-08-13 20:45:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
+29,12,2023-08-13 21:20:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+30,13,2023-08-13 21:40:00,L’Ultima Notte di Amore,12,https://studio-k.nu/film/lultima-notte-di-amore/,Bioscoop,studiok
+31,0,2023-08-14 11:35:00,Riceboy Sleeps,12,https://studio-k.nu/film/riceboy-sleeps/,Bioscoop,studiok
+32,1,2023-08-14 12:05:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+33,2,2023-08-14 12:15:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
+34,3,2023-08-14 14:00:00,L’Ultima Notte di Amore,12,https://studio-k.nu/film/lultima-notte-di-amore/,Bioscoop,studiok
+35,4,2023-08-14 14:30:00,Elemental (NL),12,https://studio-k.nu/film/elemental-nl/,Bioscoop,studiok
+36,5,2023-08-14 15:45:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
+37,6,2023-08-14 16:30:00,Asteroid City,12,https://studio-k.nu/film/asteroid-city/,Bioscoop,studiok
+38,7,2023-08-14 16:40:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+39,8,2023-08-14 18:45:00,Le paradis (ENG SUBS),12,https://studio-k.nu/film/le-paradis-eng-subs/,Bioscoop,studiok
+40,9,2023-08-14 19:00:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+41,10,2023-08-14 19:15:00,Riceboy Sleeps,12,https://studio-k.nu/film/riceboy-sleeps/,Bioscoop,studiok
+42,11,2023-08-14 20:40:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
+43,12,2023-08-14 21:20:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+44,13,2023-08-14 21:40:00,L’Ultima Notte di Amore (ENG SUBS),12,https://studio-k.nu/film/lultima-notte-di-amore-eng-subs/,Bioscoop,studiok
+45,0,2023-08-15 11:35:00,Riceboy Sleeps,12,https://studio-k.nu/film/riceboy-sleeps/,Bioscoop,studiok
+46,1,2023-08-15 12:05:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+47,2,2023-08-15 12:15:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
+48,3,2023-08-15 14:00:00,L’Ultima Notte di Amore,12,https://studio-k.nu/film/lultima-notte-di-amore/,Bioscoop,studiok
+49,4,2023-08-15 14:30:00,Elemental (NL),12,https://studio-k.nu/film/elemental-nl/,Bioscoop,studiok
+50,5,2023-08-15 15:45:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
+51,6,2023-08-15 16:30:00,Asteroid City,12,https://studio-k.nu/film/asteroid-city/,Bioscoop,studiok
+52,7,2023-08-15 16:40:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+53,8,2023-08-15 18:45:00,Le paradis (ENG SUBS),12,https://studio-k.nu/film/le-paradis-eng-subs/,Bioscoop,studiok
+54,9,2023-08-15 19:00:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+55,10,2023-08-15 19:15:00,Riceboy Sleeps,12,https://studio-k.nu/film/riceboy-sleeps/,Bioscoop,studiok
+56,11,2023-08-15 20:40:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
+57,12,2023-08-15 21:20:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+58,13,2023-08-15 21:40:00,L’Ultima Notte di Amore,12,https://studio-k.nu/film/lultima-notte-di-amore/,Bioscoop,studiok
+59,0,2023-08-16 11:40:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+60,1,2023-08-16 12:10:00,Riceboy Sleeps,12,https://studio-k.nu/film/riceboy-sleeps/,Bioscoop,studiok
+61,2,2023-08-16 12:15:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
+62,3,2023-08-16 14:00:00,Elemental (NL),12,https://studio-k.nu/film/elemental-nl/,Bioscoop,studiok
+63,4,2023-08-16 14:35:00,L’Ultima Notte di Amore,12,https://studio-k.nu/film/lultima-notte-di-amore/,Bioscoop,studiok
+64,5,2023-08-16 15:45:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
+65,6,2023-08-16 16:10:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+66,7,2023-08-16 17:05:00,Le paradis,12,https://studio-k.nu/film/le-paradis/,Bioscoop,studiok
+67,8,2023-08-16 18:30:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+68,9,2023-08-16 19:00:00,Riceboy Sleeps (ENG SUBS),12,https://studio-k.nu/film/riceboy-sleeps-eng-subs/,Bioscoop,studiok
+69,10,2023-08-16 19:15:00,L’Ultima Notte di Amore,12,https://studio-k.nu/film/lultima-notte-di-amore/,Bioscoop,studiok
+70,11,2023-08-16 20:50:00,Oppenheimer,12,https://studio-k.nu/film/oppenheimer/,Bioscoop,studiok
+71,12,2023-08-16 21:30:00,Jarhead (2005) • TALES FROM THE DESERT,12,https://studio-k.nu/film/jarhead-2005-tales-from-the-desert/,Bioscoop,studiok
+72,13,2023-08-16 21:45:00,Barbie,12,https://studio-k.nu/film/barbie/,Bioscoop,studiok
+73,0,2023-08-18 19:15:00,Past Lives,12,https://studio-k.nu/film/past-lives/,Bioscoop,studiok
+74,0,2023-08-19 17:00:00,Wanderers of the Desert [Restored] (1984) • TALES FROM THE DESERT,12,https://studio-k.nu/film/wanderers-of-the-desert-restored-1984-tales-from-the-desert/,Bioscoop,studiok

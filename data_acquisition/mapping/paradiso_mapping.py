@@ -1,19 +1,19 @@
-def map_paradiso(row):
+from typing import Dict, Any
+
+
+def map_paradiso(row: Dict[str, Any]) -> Dict[str, Any]:
     """
     Mapping function for Paradiso scraper rows, replicating post_process.
     """
     mapped = {}
 
-    # Add static venue name
+    # Core ordered fields
     mapped['venue'] = 'Paradiso'
-
-    # Prepend base URL
-    mapped['ticket_url'] = 'http://www.paradiso.nl/' + row['uri'] if row.get('uri') else None
-
-    # Rename startDateTime
+    mapped['event_name'] = row.get('title') or row.get('name') or row.get('summary')
     mapped['start_date_time'] = row.get('startDateTime')
+    mapped['ticket_url'] = 'http://www.paradiso.nl/' + row['uri'] if row.get('uri') else None
+    # Use extracted price if available, otherwise null
+    mapped['price'] = row.get('price') if row.get('price') else None
 
-    # Add price
-    mapped['price'] = 30
-
+    # Keep any additional fields (if needed) appended after
     return mapped

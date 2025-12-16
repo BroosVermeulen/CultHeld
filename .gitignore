@@ -18,6 +18,13 @@ data_acquisition/poetry.lock
 # Data folders
 data_acquisition/data/raw/
 data_acquisition/data/core/events.duckdb
+data_acquisition/data/core/events.duckdb-shm
+data_acquisition/data/core/events.duckdb-wal
+data_acquisition/data/scraper_state.json
+data_acquisition/data/staging/*.csv
+
+# Logs
+data_acquisition/utils/logs/*.log
 
 # Output
 *.csv

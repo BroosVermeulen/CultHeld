@@ -1,17 +1,18 @@
 [tool.poetry]
-name = "cultheld"
+name = "data_acquisition"
 version = "0.1.0"
 description = ""
 authors = ["Ambrosius Thomas Vermeulen <ambrosius.thomas.vermeulen@cern.ch>"]
 readme = "README.md"
-packages = [{include = "cultheld"}]
+package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.12,<3.13"
 requests = "^2.31.0"
 pandas = "^2.0.3"
 bs4 = "^0.0.1"
 flatten-json = "^0.1.13"
+duckdb = "^1.4.3"
 
 
 [tool.poetry.group.dev.dependencies]

@@ -75,7 +75,7 @@ def api_call():
         "variables": {
             "site": "paradisoEnglish",
             "size": 50,
-            "gteStartDateTime": "2023-08-03",
+            "gteStartDateTime": "2025-12-15",
             "lteStartDateTime": None,
             "searchAfter": None,
             "location": None,

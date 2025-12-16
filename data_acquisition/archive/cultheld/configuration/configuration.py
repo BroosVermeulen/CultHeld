@@ -41,21 +41,21 @@ class ConfigurationVenues:
         assert isinstance(self.ID, str), f'ID is not an int, type is {type(self.ID)}.'
 
 
-venue_001 = ConfigurationVenues(
-    ID='venue_001',
-    venue='de_balie',
-    type='Actualiteit',
-    output_folder=ROOT_DIR + '/../output/de_balie.csv',
-    function=de_balie.main
-)
+# venue_001 = ConfigurationVenues(
+#     ID='venue_001',
+#     venue='de_balie',
+#     type='Actualiteit',
+#     output_folder=ROOT_DIR + '/../output/de_balie.csv',
+#     function=de_balie.main
+# )
 
-venue_002 = ConfigurationVenues(
-    ID='venue_002',
-    venue='studiok',
-    type='Bioscoop',
-    output_folder=ROOT_DIR + '/../output/studiok.csv',
-    function=studiok.main,
-)
+# venue_002 = ConfigurationVenues(
+#     ID='venue_002',
+#     venue='studiok',
+#     type='Bioscoop',
+#     output_folder=ROOT_DIR + '/../output/studiok.csv',
+#     function=studiok.main,
+# )
 
 venue_003 = ConfigurationVenues(
     ID='venue_003',
@@ -65,21 +65,21 @@ venue_003 = ConfigurationVenues(
     function=paradiso.main,
 )
 
-venue_004 = ConfigurationVenues(
-    ID='venue_004',
-    venue='fchyena',
-    type='Bioscoop',
-    output_folder=ROOT_DIR + '/../output/fchyena.csv',
-    function=fchyena.main,
-)
+# venue_004 = ConfigurationVenues(
+#     ID='venue_004',
+#     venue='fchyena',
+#     type='Bioscoop',
+#     output_folder=ROOT_DIR + '/../output/fchyena.csv',
+#     function=fchyena.main,
+# )
 
-venue_005 = ConfigurationVenues(
-    ID='venue_005',
-    venue='melkweg',
-    type='Concert',
-    output_folder=ROOT_DIR + '/../output/melkweg.csv',
-    function=melkweg.main,
-)
+# venue_005 = ConfigurationVenues(
+#     ID='venue_005',
+#     venue='melkweg',
+#     type='Concert',
+#     output_folder=ROOT_DIR + '/../output/melkweg.csv',
+#     function=melkweg.main,
+# )
 
 venue_006 = ConfigurationVenues(
     ID='venue_006',

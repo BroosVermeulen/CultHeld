@@ -1,16 +1,24 @@
-CultHeld.code-workspace
-CultHeld/venues/paradiso/paradiso.csv
-
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-
-# Unit test / coverage reports
-.tox/
-.coverage
-.cache
-nosetests.xml
-coverage.xml
-
-# Other
+# macOS system files
 .DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VS Code settings
+.vscode/
+
+# Virtual environment / Poetry
+data_acquisition/.env/
+data_acquisition/.venv/
+data_acquisition/poetry.lock
+
+# Data folders
+data_acquisition/data/raw/
+data_acquisition/data/core/events.duckdb
+
+# Output
+*.csv
+*.tsv

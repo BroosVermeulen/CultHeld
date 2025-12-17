@@ -1,11 +1,12 @@
-import sys
 import pathlib
+import sys
+
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-import pandas as pd
-from staging.fchyena import _parse_shows_from_html
+import pandas as pd  # noqa: E402
 
+from staging.fchyena import _parse_shows_from_html  # noqa: E402
 
 SAMPLE_HTML = b'''<html><body>
 <div class="show">

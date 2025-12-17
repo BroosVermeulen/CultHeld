@@ -1,9 +1,10 @@
-import json
-import requests
-import pandas as pd
-from bs4 import BeautifulSoup
-import numpy as np
 import datetime
+import json
+
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+
 
 def main():
     df = retrieve(str(datetime.date.today()), 10)

@@ -1,8 +1,9 @@
 """Incremental update tracking for scrapers."""
 
 import json
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
+
 from utils.logging_config import get_logger
 
 logger = get_logger(__name__)

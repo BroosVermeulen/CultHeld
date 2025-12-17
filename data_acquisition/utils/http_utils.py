@@ -1,16 +1,25 @@
 import json
-import time
 import logging
-from typing import Optional, Dict, Any
+import time
+from typing import Any
+
 import requests
 
 logger = logging.getLogger(__name__)
 
 
-def safe_request(method: str, url: str, *, headers: Optional[Dict[str, str]] = None,
-                 params: Optional[Dict[str, Any]] = None, data: Optional[Any] = None,
-                 json_body: Optional[Any] = None, retries: int = 3, backoff: float = 1.0,
-                 timeout: float = 10.0) -> requests.Response:
+def safe_request(
+    method: str,
+    url: str,
+    *,
+    headers: dict[str, str] | None = None,
+    params: dict[str, Any] | None = None,
+    data: Any | None = None,
+    json_body: Any | None = None,
+    retries: int = 3,
+    backoff: float = 1.0,
+    timeout: float = 10.0,
+) -> requests.Response:
     """Perform an HTTP request with retries and exponential backoff.
 
     Returns the final requests.Response (may be non-200). Raises the last exception
@@ -23,12 +32,22 @@ def safe_request(method: str, url: str, *, headers: Optional[Dict[str, str]] = N
         hdrs["User-Agent"] = "CultHeldDataAcquisition/1.0 (+https://github.com/ambrosiusvermeulen)"
     for attempt in range(1, retries + 1):
         try:
-            resp = requests.request(method, url, headers=hdrs, params=params, data=data, json=json_body, timeout=timeout)
+            resp = requests.request(
+                method, url, headers=hdrs, params=params, data=data, json=json_body, timeout=timeout
+            )
             return resp
         except requests.RequestException as e:
             last_exc = e
             wait = backoff * (2 ** (attempt - 1))
-            logger.warning("HTTP %s to %s failed on attempt %d/%d: %s — retrying in %.1fs", method, url, attempt, retries, e, wait)
+            logger.warning(
+                "HTTP %s to %s failed on attempt %d/%d: %s — retrying in %.1fs",
+                method,
+                url,
+                attempt,
+                retries,
+                e,
+                wait,
+            )
             time.sleep(wait)
     # If we get here, all retries failed
     logger.error("All retries failed for %s %s: %s", method, url, last_exc)
@@ -61,7 +80,7 @@ def safe_json(resp: requests.Response) -> Any:
             raw = None
 
         # 1) try to decode as utf-8
-        if isinstance(raw, (bytes, bytearray)):
+        if isinstance(raw, bytes | bytearray):
             try:
                 text = raw.decode('utf-8')
                 return json.loads(text)
@@ -72,7 +91,9 @@ def safe_json(resp: requests.Response) -> Any:
             try:
                 import gzip
                 text = gzip.decompress(raw).decode('utf-8')
-                logger.debug('Decoded response via gzip.decompress for %s', getattr(resp, 'url', '<unknown>'))
+                logger.debug(
+                    'Decoded response via gzip.decompress for %s', getattr(resp, 'url', '<unknown>')
+                )
                 return json.loads(text)
             except Exception:
                 pass
@@ -81,7 +102,10 @@ def safe_json(resp: requests.Response) -> Any:
             try:
                 import brotli
                 text = brotli.decompress(raw).decode('utf-8')
-                logger.debug('Decoded response via brotli.decompress for %s', getattr(resp, 'url', '<unknown>'))
+                logger.debug(
+                    'Decoded response via brotli.decompress for %s',
+                    getattr(resp, 'url', '<unknown>'),
+                )
                 return json.loads(text)
             except Exception:
                 pass
@@ -90,7 +114,9 @@ def safe_json(resp: requests.Response) -> Any:
             try:
                 import zlib
                 text = zlib.decompress(raw).decode('utf-8')
-                logger.debug('Decoded response via zlib.decompress for %s', getattr(resp, 'url', '<unknown>'))
+                logger.debug(
+                    'Decoded response via zlib.decompress for %s', getattr(resp, 'url', '<unknown>')
+                )
                 return json.loads(text)
             except Exception:
                 pass
@@ -105,6 +131,13 @@ def safe_json(resp: requests.Response) -> Any:
                 snippet = (resp.content[:1024] if hasattr(resp, 'content') else str(resp))
             except Exception:
                 snippet = str(resp)[:1024]
-            logger.error("Failed to parse JSON response from %s; resp.status=%s; snippet=%s; errors: %s | %s",
-                         getattr(resp, 'url', '<unknown>'), getattr(resp, 'status_code', '<no-status>'), snippet, e, e2)
+            logger.error(
+                "Failed to parse JSON response from %s; resp.status=%s; snippet=%s; "
+                "errors: %s | %s",
+                getattr(resp, 'url', '<unknown>'),
+                getattr(resp, 'status_code', '<no-status>'),
+                snippet,
+                e,
+                e2,
+            )
             raise ValueError("Invalid JSON response") from e2

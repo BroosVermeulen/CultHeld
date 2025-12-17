@@ -1,13 +1,14 @@
-import sys
 import pathlib
+import sys
+
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-import gzip
-import zlib
-import json
+import gzip  # noqa: E402
+import json  # noqa: E402
+import zlib  # noqa: E402
 
-from utils.http_utils import safe_json
+from utils.http_utils import safe_json  # noqa: E402
 
 
 class FakeResp:

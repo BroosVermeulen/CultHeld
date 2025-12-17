@@ -1,16 +1,11 @@
 import os
+from collections.abc import Callable
 from dataclasses import dataclass
-from typing import Callable
 
-from cultheld.configuration.utils.utils_configuration import AllInstances
-import cultheld.venues.actualiteit.de_balie as de_balie
-import cultheld.venues.bioscoop.studiok as studiok
-import cultheld.venues.concert.paradiso as paradiso
-import cultheld.venues.bioscoop.fchyena as fchyena
-import cultheld.venues.concert.melkweg as melkweg
 import cultheld.venues.concert.concertgebouw as concertgebouw
+import cultheld.venues.concert.paradiso as paradiso
 import cultheld.venues.theater.carre as carre
-
+from cultheld.configuration.utils.utils_configuration import AllInstances
 
 ROOT_DIR = os.path.dirname(os.path.dirname(__file__))
 

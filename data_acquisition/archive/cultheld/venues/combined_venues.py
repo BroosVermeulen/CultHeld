@@ -1,8 +1,8 @@
 import os
+
 import pandas as pd
 
 from cultheld.configuration.configuration import configuration_venues
-
 
 ROOT_DIR = os.path.dirname(os.path.dirname(__file__))
 

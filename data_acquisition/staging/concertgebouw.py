@@ -1,9 +1,8 @@
-import requests
 import pandas as pd
 from bs4 import BeautifulSoup
-from typing import List
+
+from utils.http_utils import safe_get
 from utils.logging_config import get_logger
-from utils.http_utils import safe_get, safe_json
 
 logger = get_logger(__name__)
 

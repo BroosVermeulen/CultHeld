@@ -1,7 +1,7 @@
-from typing import Dict, Any
+from typing import Any
 
 
-def map_fchyena(row: Dict[str, Any]) -> Dict[str, Any]:
+def map_fchyena(row: dict[str, Any]) -> dict[str, Any]:
     """Mapping function for FCHYENA scraper rows."""
     mapped = {}
 

@@ -1,8 +1,8 @@
-from typing import Dict, Any
 import re
+from typing import Any
 
 
-def map_carre(row: Dict[str, Any]) -> Dict[str, Any]:
+def map_carre(row: dict[str, Any]) -> dict[str, Any]:
     """Mapping function for Carré scraper rows."""
     mapped = {}
 

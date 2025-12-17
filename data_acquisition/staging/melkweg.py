@@ -1,8 +1,10 @@
-import requests
 import json
-import pandas as pd
 import re
 from io import StringIO
+
+import pandas as pd
+import requests
+
 from config import melkweg as melkweg_config
 from utils.logging_config import get_logger
 

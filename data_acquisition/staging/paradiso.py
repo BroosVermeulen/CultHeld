@@ -1,7 +1,9 @@
 import json
-import requests
-import pandas as pd
 from io import StringIO
+
+import pandas as pd
+import requests
+
 from config import paradiso as paradiso_config
 from utils.logging_config import get_logger
 

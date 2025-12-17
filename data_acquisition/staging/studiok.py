@@ -1,11 +1,11 @@
-import json
-import requests
+from datetime import datetime, timedelta
+
 import pandas as pd
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
+
 from config import studiok as studiok_config
+from utils.http_utils import safe_json, safe_post
 from utils.logging_config import get_logger
-from utils.http_utils import safe_post, safe_json
 
 logger = get_logger(__name__)
 
@@ -41,7 +41,9 @@ def post_process(df: pd.DataFrame) -> pd.DataFrame:
     
     # Convert start_date_time to datetime
     # parse as UTC then convert to Amsterdam timezone
-    df['start_date_time'] = pd.to_datetime(df['start_date_time'], errors='coerce', utc=True).dt.tz_convert('Europe/Amsterdam')
+    df['start_date_time'] = pd.to_datetime(
+        df['start_date_time'], errors='coerce', utc=True
+    ).dt.tz_convert('Europe/Amsterdam')
     
     df['venue'] = 'Studio K'
     df['price'] = 12

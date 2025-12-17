@@ -1,6 +1,7 @@
+from pathlib import Path
+
 import duckdb
 import pandas as pd
-from pathlib import Path
 
 # Path to your DuckDB database
 DB_FILE = Path(__file__).parent.parent / "events.duckdb"

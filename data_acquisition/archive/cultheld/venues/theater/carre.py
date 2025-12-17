@@ -1,8 +1,7 @@
-import requests
 import json
+
 import pandas as pd
-import numpy as np
-from flatten_json import flatten
+import requests
 
 
 def main():

@@ -1,13 +1,15 @@
 import importlib
 import os
+from collections.abc import Callable
 from pathlib import Path
+
 import pandas as pd
-from typing import Callable
-from utils.logging_config import get_logger
-from utils.validation import validate_records
-from utils.staging_utils import save_raw_csv
-from utils.incremental import should_update, set_last_run
+
 from core.transform import write_core_records
+from utils.incremental import set_last_run, should_update
+from utils.logging_config import get_logger
+from utils.staging_utils import save_raw_csv
+from utils.validation import validate_records
 
 logger = get_logger(__name__)
 

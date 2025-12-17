@@ -1,7 +1,7 @@
-from typing import Dict, Any
+from typing import Any
 
 
-def map_de_balie(row: Dict[str, Any]) -> Dict[str, Any]:
+def map_de_balie(row: dict[str, Any]) -> dict[str, Any]:
     """Mapping function for De Balie scraper rows."""
     mapped = {}
 

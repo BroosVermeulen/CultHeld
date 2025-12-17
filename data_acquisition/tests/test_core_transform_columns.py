@@ -1,14 +1,14 @@
-import sys
 import pathlib
+import sys
 from pathlib import Path
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-import duckdb
-import pandas as pd
+import duckdb  # noqa: E402
+import pandas as pd  # noqa: E402
 
-import core.transform as transform
+import core.transform as transform  # noqa: E402
 
 
 def test_write_core_records_column_order(tmp_path):

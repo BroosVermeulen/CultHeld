@@ -1,5 +1,6 @@
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
+
 import pandas as pd
 
 RAW_CSV_DIR = Path("data/staging")

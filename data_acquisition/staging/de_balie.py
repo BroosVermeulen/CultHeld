@@ -1,7 +1,7 @@
-import requests
-import json
+
 import pandas as pd
-from io import StringIO
+import requests
+
 from config import de_balie as de_balie_config
 from utils.logging_config import get_logger
 

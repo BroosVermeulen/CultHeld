@@ -1,7 +1,9 @@
+from urllib.parse import unquote, urlparse
+
 import pandas as pd
-from utils.logging_config import get_logger
+
 from utils.http_utils import safe_get, safe_json
-from urllib.parse import urlparse, unquote
+from utils.logging_config import get_logger
 
 logger = get_logger(__name__)
 

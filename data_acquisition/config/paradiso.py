@@ -11,7 +11,10 @@ HEADERS = {
     "Sec-Fetch-Mode": "cors",
     "Host": "gqlcache-production.paradiso.workers.dev",
     "Origin": "https://www.paradiso.nl",
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15",
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 "
+        "(KHTML, like Gecko) Version/16.5 Safari/605.1.15"
+    ),
     "Referer": "https://www.paradiso.nl/",
     "Connection": "keep-alive",
     "Sec-Fetch-Dest": "empty",

@@ -15,7 +15,7 @@ def map_carre(row: dict[str, Any]) -> dict[str, Any]:
     # normalize price to integer/float where possible, otherwise null
     price_raw = row.get('price')
     price_val = None
-    if isinstance(price_raw, (int, float)):
+    if isinstance(price_raw, int | float):
         try:
             price_val = float(price_raw) if isinstance(price_raw, float) else int(price_raw)
         except Exception:

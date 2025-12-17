@@ -65,5 +65,7 @@ def post_process(df: pd.DataFrame) -> pd.DataFrame:
 def api_call() -> requests.Response:
     """Call De Balie API."""
     url = de_balie_config.BASE_URL + de_balie_config.API_ENDPOINT
-    response = requests.get(url, headers=de_balie_config.HEADERS, params=de_balie_config.QUERY_PARAMS)
+    response = requests.get(
+        url, headers=de_balie_config.HEADERS, params=de_balie_config.QUERY_PARAMS
+    )
     return response

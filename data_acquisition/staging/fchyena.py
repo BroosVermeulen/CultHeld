@@ -12,7 +12,11 @@ logger = get_logger(__name__)
 def scrape() -> pd.DataFrame:
     """Scrape FCHYENA events and return as DataFrame using robust HTTP utils."""
     try:
-        resp = safe_get(fchyena_config.BASE_URL + fchyena_config.API_ENDPOINT, headers=fchyena_config.HEADERS, params=fchyena_config.QUERY_PARAMS)
+        resp = safe_get(
+            fchyena_config.BASE_URL + fchyena_config.API_ENDPOINT,
+            headers=fchyena_config.HEADERS,
+            params=fchyena_config.QUERY_PARAMS,
+        )
     except Exception as e:
         logger.error("FCHYENA HTTP request failed: %s", e)
         return pd.DataFrame(columns=['start_date_time', 'ticket_url', 'price'])
@@ -53,7 +57,9 @@ def scrape() -> pd.DataFrame:
                     year = datetime.now().year
                     try:
                         # parse as localized Amsterdam time
-                        start_dt = pd.to_datetime(f"{day}-{month}-{year} {time_start}", format="%d-%m-%Y %H:%M")
+                        start_dt = pd.to_datetime(
+                            f"{day}-{month}-{year} {time_start}", format="%d-%m-%Y %H:%M"
+                        )
                         # localize naive dt to Europe/Amsterdam
                         try:
                             start_dt = start_dt.tz_localize('Europe/Amsterdam')
@@ -116,7 +122,9 @@ def _parse_shows_from_html(html: bytes) -> pd.DataFrame:
             if (start_dt is None or pd.isna(start_dt)) and dt and not re.search(r"\b\d{4}\b", dt):
                 from datetime import datetime as _dt
                 try:
-                    start_dt = pd.to_datetime(f"{dt} {_dt.now().year}", dayfirst=True, errors='coerce')
+                    start_dt = pd.to_datetime(
+                        f"{dt} {_dt.now().year}", dayfirst=True, errors='coerce'
+                    )
                     try:
                         if start_dt.tzinfo is None:
                             start_dt = start_dt.tz_localize('Europe/Amsterdam')
@@ -144,7 +152,11 @@ def _parse_shows_from_html(html: bytes) -> pd.DataFrame:
                 ticket = sib['href']
 
         if start_dt is not None and not pd.isna(start_dt):
-            events.append({'start_date_time': start_dt, 'ticket_url': ticket or fchyena_config.BASE_URL, 'price': 10})
+            events.append({
+                'start_date_time': start_dt,
+                'ticket_url': ticket or fchyena_config.BASE_URL,
+                'price': 10,
+            })
 
     df = pd.DataFrame(events)
     return df

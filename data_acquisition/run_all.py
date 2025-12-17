@@ -13,7 +13,9 @@ from utils.validation import validate_records
 
 logger = get_logger(__name__)
 
-def discover_scrapers(staging_pkg: str = 'staging', mapping_pkg: str = 'mapping') -> list[tuple[Callable, Callable, str]]:
+def discover_scrapers(
+    staging_pkg: str = 'staging', mapping_pkg: str = 'mapping'
+) -> list[tuple[Callable, Callable, str]]:
     """Auto-discover staging modules and corresponding mapping functions.
 
     For each module `staging.<name>`, attempts to import `mapping.<name>_mapping`
@@ -56,7 +58,9 @@ def discover_scrapers(staging_pkg: str = 'staging', mapping_pkg: str = 'mapping'
         map_func_name = f"map_{mod_name}"
         if not hasattr(mm, map_func_name):
             logger = get_logger(__name__)
-            logger.warning('Mapping function %s not found in %s', map_func_name, mapping_module_path)
+            logger.warning(
+                'Mapping function %s not found in %s', map_func_name, mapping_module_path
+            )
             continue
         map_callable = getattr(mm, map_func_name)
 
@@ -128,7 +132,10 @@ def run_all_scrapers(force_update: bool = False) -> None:
             failed_scrapers += 1
             continue
     
-    logger.info(f"Pipeline complete: {successful_scrapers} successful, {failed_scrapers} failed, {skipped_scrapers} skipped")
+    logger.info(
+        f"Pipeline complete: {successful_scrapers} successful, {failed_scrapers} failed, "
+        f"{skipped_scrapers} skipped"
+    )
 
 
 # This ensures the function runs when the script is executed directly

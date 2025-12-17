@@ -16,7 +16,10 @@ HEADERS = {
     "Sec-Fetch-Mode": "cors",
     "Accept-Language": "en-GB,en;q=0.9",
     "Host": "www.melkweg.nl",
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15",
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 "
+        "(KHTML, like Gecko) Version/16.5 Safari/605.1.15"
+    ),
     "Referer": "https://www.melkweg.nl/nl/",
     "Connection": "keep-alive",
     "Sec-Fetch-Dest": "empty",

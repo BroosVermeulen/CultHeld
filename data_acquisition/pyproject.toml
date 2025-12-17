@@ -38,7 +38,7 @@ target-version = ["py312"]
 [tool.ruff]
 line-length = 100
 target-version = "py312"
-extend-exclude = ["data/core/*.duckdb", "data/*.csv", "**/__pycache__/**"]
+extend-exclude = ["data/core/*.duckdb", "data/*.csv", "**/__pycache__/**", "archive/**"]
 
 [tool.ruff.lint]
 select = [

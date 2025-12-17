@@ -30,7 +30,9 @@ def scrape() -> pd.DataFrame:
     response = api_call()
     json_data = json.loads(response.text)
     out = []
-    for x in json_data['pageProps']['pageData']['attributes']['content'][0]['attributes']['initialEvents']:
+    for x in json_data['pageProps']['pageData']['attributes']['content'][0]['attributes'][
+        'initialEvents'
+    ]:
         out.append(x['attributes'])
     json_string = json.dumps(out)
 
@@ -46,6 +48,8 @@ def api_call() -> requests.Response:
     url = f"https://www.melkweg.nl{melkweg_config.API_ENDPOINT}".format(build_id=build_id)
 
     payload = ""
-    response = requests.request("GET", url, data=payload, headers=melkweg_config.HEADERS, params=melkweg_config.QUERY_PARAMS)
+    response = requests.request(
+        "GET", url, data=payload, headers=melkweg_config.HEADERS, params=melkweg_config.QUERY_PARAMS
+    )
 
     return response

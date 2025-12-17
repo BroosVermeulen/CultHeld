@@ -61,7 +61,11 @@ def scrape(max_events: int = 50) -> pd.DataFrame:
             title = title_tag.text.strip() if title_tag else rel
             # fallback ticket link
             if not ticket_url:
-                a_ticket = page.find('a', href=lambda x: x and ('tix.concertgebouw.nl' in x or 'tickets' in x or 'buy' in x))
+                a_ticket = page.find(
+                    'a',
+                    href=lambda x: x
+                    and ('tix.concertgebouw.nl' in x or 'tickets' in x or 'buy' in x),
+                )
                 if a_ticket:
                     ticket_url = a_ticket.get('href')
 
@@ -80,13 +84,27 @@ def scrape(max_events: int = 50) -> pd.DataFrame:
                         offers = data.get('offers')
                     # offers might be a dict or a list
                     if isinstance(offers, dict):
-                        price_val = offers.get('price') or offers.get('priceSpecification', {}).get('price') or ''
+                        price_val = (
+                            offers.get('price')
+                            or offers.get('priceSpecification', {}).get('price')
+                            or ''
+                        )
                     elif isinstance(offers, list) and offers:
-                        price_val = offers[0].get('price') or offers[0].get('priceSpecification', {}).get('price') or ''
+                        price_val = (
+                            offers[0].get('price')
+                            or offers[0].get('priceSpecification', {}).get('price')
+                            or ''
+                        )
                 except Exception:
                     price_val = ''
 
-            events.append({'venue': 'Concertgebouw', 'start_date_time': start_dt, 'ticket_url': ticket_url, 'price': price_val, 'title': title})
+            events.append({
+                'venue': 'Concertgebouw',
+                'start_date_time': start_dt,
+                'ticket_url': ticket_url,
+                'price': price_val,
+                'title': title,
+            })
         except Exception as e:
             logger.warning('Failed to fetch Concertgebouw event %s: %s', rel, e)
 
@@ -94,7 +112,9 @@ def scrape(max_events: int = 50) -> pd.DataFrame:
     # normalize start_date_time
     if not df.empty:
         # parse as UTC then convert to Amsterdam timezone
-        df['start_date_time'] = pd.to_datetime(df['start_date_time'], errors='coerce', utc=True).dt.tz_convert('Europe/Amsterdam')
+        df['start_date_time'] = pd.to_datetime(
+            df['start_date_time'], errors='coerce', utc=True
+        ).dt.tz_convert('Europe/Amsterdam')
         df = df.dropna(subset=['start_date_time'])
     return df
 

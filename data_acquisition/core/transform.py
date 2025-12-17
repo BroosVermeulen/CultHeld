@@ -12,7 +12,9 @@ logger = get_logger(__name__)
 DB_FILE = Path("data/core/events.duckdb")
 
 
-def write_core_records(df: pd.DataFrame, as_of_date: str | None = None, table_name: str = "events") -> None:
+def write_core_records(
+    df: pd.DataFrame, as_of_date: str | None = None, table_name: str = "events"
+) -> None:
     """
     Write a DataFrame to DuckDB, adding as_of_date.
     Overwrites existing rows for the same venue + as_of_date.
@@ -61,4 +63,7 @@ def write_core_records(df: pd.DataFrame, as_of_date: str | None = None, table_na
     con.execute(f"INSERT INTO {table_name} SELECT * FROM df")
     con.close()
 
-    logger.info(f"Written {len(df)} rows for venues={df['venue'].unique().tolist()}, as_of_date={as_of_date}")
+    logger.info(
+        f"Written {len(df)} rows for venues={df['venue'].unique().tolist()}, "
+        f"as_of_date={as_of_date}"
+    )

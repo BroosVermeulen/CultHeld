@@ -33,7 +33,9 @@ def scrape() -> pd.DataFrame:
             hrefs = page.eval_on_selector_all('a', 'els => els.map(e => e.href)')
             browser.close()
     except Exception:
-        logger.info('Playwright not available when collecting Carré links; using static homepage fetch')
+        logger.info(
+            'Playwright not available when collecting Carré links; using static homepage fetch'
+        )
         try:
             resp = safe_get('https://carre.nl')
             from bs4 import BeautifulSoup
@@ -71,12 +73,28 @@ def scrape() -> pd.DataFrame:
             for prod_key, prod in productions.items():
                 # try to get a production title from prod.data
                 prod_data = prod.get('data') or {}
-                prod_title = prod_data.get('title') or prod_data.get('name') or prod.get('id') or slug
+                prod_title = (
+                    prod_data.get('title')
+                    or prod_data.get('name')
+                    or prod.get('id')
+                    or slug
+                )
                 events_list = prod.get('events') or []
                 for ev in events_list:
                     start = ev.get('start_date') or ev.get('start') or ev.get('start_date_time')
-                    ticket = ev.get('sales_url') or ev.get('ticketUrl') or ev.get('salesUrl') or ev.get('sales_url')
-                    events.append({'venue': 'Carré', 'start_date_time': start, 'ticket_url': ticket, 'price': '', 'title': prod_title})
+                    ticket = (
+                        ev.get('sales_url')
+                        or ev.get('ticketUrl')
+                        or ev.get('salesUrl')
+                        or ev.get('sales_url')
+                    )
+                    events.append({
+                        'venue': 'Carré',
+                        'start_date_time': start,
+                        'ticket_url': ticket,
+                        'price': '',
+                        'title': prod_title,
+                    })
         except Exception as e:
             logger.warning('Error fetching Carré production %s: %s', full, e)
 
@@ -99,7 +117,13 @@ def scrape() -> pd.DataFrame:
                         if time_tag and time_tag.has_attr('datetime'):
                             start = time_tag['datetime']
                         title_text = title_tag.text.strip() if title_tag else url
-                        events.append({'venue': 'Carré', 'start_date_time': start, 'ticket_url': url, 'price': '', 'title': title_text})
+                        events.append({
+                            'venue': 'Carré',
+                            'start_date_time': start,
+                            'ticket_url': url,
+                            'price': '',
+                            'title': title_text,
+                        })
                     except Exception as e:
                         logger.warning('Failed to parse Carré event %s: %s', url, e)
                 browser.close()
@@ -109,7 +133,9 @@ def scrape() -> pd.DataFrame:
     df = pd.DataFrame(events)
     if not df.empty:
         # parse as UTC then convert to Amsterdam timezone
-        df['start_date_time'] = pd.to_datetime(df['start_date_time'], errors='coerce', utc=True).dt.tz_convert('Europe/Amsterdam')
+        df['start_date_time'] = pd.to_datetime(
+            df['start_date_time'], errors='coerce', utc=True
+        ).dt.tz_convert('Europe/Amsterdam')
         df = df.dropna(subset=['start_date_time'])
     return df
 

@@ -15,7 +15,7 @@ def _extract_slug(url: str) -> str:
     return ''
 
 
-def carre() -> pd.DataFrame:
+def scrape() -> pd.DataFrame:
     """Scrape Carré by using the site's JSON API per production when possible,
     falling back to Playwright HTML rendering if needed.
     """

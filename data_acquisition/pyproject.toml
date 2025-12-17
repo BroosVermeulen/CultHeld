@@ -20,6 +20,8 @@ playwright = "^1.57.0"
 mypy = "^1.4.1"
 pytest = "^7.4.0"
 pytest-cov = "^4.1.0"
+ruff = "^0.6.9"
+black = "^24.8.0"
 
 [build-system]
 requires = ["poetry-core"]
@@ -28,3 +30,25 @@ build-backend = "poetry.core.masonry.api"
 [[tool.mypy.overrides]]
 module = ["pandas.*", "requests.*", "bs4.*"]
 ignore_missing_imports = true
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["data/core/*.duckdb", "data/*.csv", "**/__pycache__/**"]
+
+[tool.ruff.lint]
+select = [
+	"E",
+	"F",
+	"I",
+	"UP",
+]
+ignore = []
+
+[tool.ruff.lint.isort]
+known-first-party = ["core", "staging", "mapping", "utils", "config"]
+force-single-line = false

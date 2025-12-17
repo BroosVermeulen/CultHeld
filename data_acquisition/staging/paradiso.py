@@ -8,7 +8,7 @@ from utils.logging_config import get_logger
 logger = get_logger(__name__)
 
 
-def paradiso() -> pd.DataFrame:
+def scrape() -> pd.DataFrame:
     """Query Paradiso GraphQL API and return events as DataFrame."""
     url = paradiso_config.URL
 

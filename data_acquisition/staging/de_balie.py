@@ -8,7 +8,7 @@ from utils.logging_config import get_logger
 logger = get_logger(__name__)
 
 
-def de_balie() -> pd.DataFrame:
+def scrape() -> pd.DataFrame:
     """Scrape De Balie events and return as DataFrame."""
     df = retrieve()
     if len(df) == 0:
@@ -42,6 +42,9 @@ def retrieve() -> pd.DataFrame:
     
     df = pd.DataFrame(events)
     return df
+
+
+ 
 
 
 def post_process(df: pd.DataFrame) -> pd.DataFrame:

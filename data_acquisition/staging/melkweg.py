@@ -23,7 +23,7 @@ def _get_melkweg_build_id() -> str:
     return melkweg_config.FALLBACK_BUILD_ID
 
 
-def melkweg() -> pd.DataFrame:
+def scrape() -> pd.DataFrame:
     """Scrape Melkweg events from API and return as DataFrame."""
     response = api_call()
     json_data = json.loads(response.text)

@@ -10,7 +10,7 @@ from utils.http_utils import safe_post, safe_json
 logger = get_logger(__name__)
 
 
-def studiok() -> pd.DataFrame:
+def scrape() -> pd.DataFrame:
     """Scrape Studio K events and return as DataFrame."""
     start_date = datetime.today()
     df = retrieve(start_date, studiok_config.DAYS_AHEAD)
@@ -48,6 +48,9 @@ def post_process(df: pd.DataFrame) -> pd.DataFrame:
     
     # include title for mapping
     return df[['venue', 'start_date_time', 'ticket_url', 'price', 'title']]
+
+
+# `scrape` is the canonical entrypoint for this module.
 
 
 def api_call(check_date: datetime) -> list:

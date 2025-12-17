@@ -17,9 +17,13 @@ def safe_request(method: str, url: str, *, headers: Optional[Dict[str, str]] = N
     only if all retries fail due to network errors.
     """
     last_exc = None
+    # Ensure a friendly default User-Agent to reduce blocks by some servers
+    hdrs = dict(headers or {})
+    if not any(k.lower() == "user-agent" for k in hdrs.keys()):
+        hdrs["User-Agent"] = "CultHeldDataAcquisition/1.0 (+https://github.com/ambrosiusvermeulen)"
     for attempt in range(1, retries + 1):
         try:
-            resp = requests.request(method, url, headers=headers, params=params, data=data, json=json_body, timeout=timeout)
+            resp = requests.request(method, url, headers=hdrs, params=params, data=data, json=json_body, timeout=timeout)
             return resp
         except requests.RequestException as e:
             last_exc = e

@@ -1,37 +1,76 @@
+import importlib
+import os
+from pathlib import Path
 import pandas as pd
-from typing import Callable, Tuple
+from typing import Callable
 from utils.logging_config import get_logger
 from utils.validation import validate_records
 from utils.staging_utils import save_raw_csv
 from utils.incremental import should_update, set_last_run
-from staging.paradiso import paradiso
-from staging.melkweg import melkweg
-from staging.de_balie import de_balie
-from staging.fchyena import fchyena
-from staging.studiok import studiok
-from staging.concertgebouw import concertgebouw
-from staging.carre import carre
-from mapping.paradiso_mapping import map_paradiso
-from mapping.melkweg_mapping import map_melkweg
-from mapping.de_balie_mapping import map_de_balie
-from mapping.fchyena_mapping import map_fchyena
-from mapping.studiok_mapping import map_studiok
-from mapping.concertgebouw_mapping import map_concertgebouw
-from mapping.carre_mapping import map_carre
 from core.transform import write_core_records
 
 logger = get_logger(__name__)
 
-# List of scrapers and their corresponding mapping functions
-SCRAPERS: list[Tuple[Callable, Callable, str]] = [
-    (paradiso, map_paradiso, "Paradiso"),
-    (melkweg, map_melkweg, "Melkweg"),
-    (de_balie, map_de_balie, "De Balie"),
-    (fchyena, map_fchyena, "FCHYENA"),
-    (studiok, map_studiok, "Studio K"),
-    (concertgebouw, map_concertgebouw, "Concertgebouw"),
-    (carre, map_carre, "Carré"),
-]
+def discover_scrapers(staging_pkg: str = 'staging', mapping_pkg: str = 'mapping') -> list[tuple[Callable, Callable, str]]:
+    """Auto-discover staging modules and corresponding mapping functions.
+
+    For each module `staging.<name>`, attempts to import `mapping.<name>_mapping`
+    and retrieve `map_<name>` as the mapping function. The venue name is
+    derived by calling the mapping function with an empty row (most mapping
+    functions set a static `venue` field).
+    """
+    scrapers = []
+    base = Path(__file__).parent / staging_pkg
+    for f in sorted(os.listdir(base)):
+        if not f.endswith('.py') or f.startswith('_'):
+            continue
+        mod_name = f[:-3]
+        staging_module_path = f"{staging_pkg}.{mod_name}"
+        mapping_module_path = f"{mapping_pkg}.{mod_name}_mapping"
+        try:
+            sm = importlib.import_module(staging_module_path)
+        except Exception:
+            logger = get_logger(__name__)
+            logger.warning('Failed to import staging module %s', staging_module_path)
+            continue
+
+        # choose scraper callable: prefer `scrape`, else fallback to function named after module
+        if hasattr(sm, 'scrape') and callable(getattr(sm, 'scrape')):
+            scraper_callable = getattr(sm, 'scrape')
+        elif hasattr(sm, mod_name) and callable(getattr(sm, mod_name)):
+            scraper_callable = getattr(sm, mod_name)
+        else:
+            logger = get_logger(__name__)
+            logger.warning('No scraper callable found in %s', staging_module_path)
+            continue
+
+        try:
+            mm = importlib.import_module(mapping_module_path)
+        except Exception:
+            logger = get_logger(__name__)
+            logger.warning('No mapping module for %s; skipping', mod_name)
+            continue
+
+        map_func_name = f"map_{mod_name}"
+        if not hasattr(mm, map_func_name):
+            logger = get_logger(__name__)
+            logger.warning('Mapping function %s not found in %s', map_func_name, mapping_module_path)
+            continue
+        map_callable = getattr(mm, map_func_name)
+
+        # derive venue name by calling mapping function on an empty dict
+        try:
+            venue_name = map_callable({}).get('venue')
+        except Exception:
+            venue_name = mod_name.replace('_', ' ').title()
+
+        scrapers.append((scraper_callable, map_callable, venue_name))
+
+    return scrapers
+
+
+# Discovered scrapers
+SCRAPERS = discover_scrapers()
 
 
 def run_all_scrapers(force_update: bool = False) -> None:
@@ -92,4 +131,4 @@ def run_all_scrapers(force_update: bool = False) -> None:
 
 # This ensures the function runs when the script is executed directly
 if __name__ == "__main__":
-    run_all_scrapers()
+    run_all_scrapers(True)

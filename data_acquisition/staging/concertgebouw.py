@@ -8,7 +8,7 @@ from utils.http_utils import safe_get, safe_json
 logger = get_logger(__name__)
 
 
-def concertgebouw(max_events: int = 50) -> pd.DataFrame:
+def scrape(max_events: int = 50) -> pd.DataFrame:
     """Scrape Concertgebouw events by harvesting event links and parsing pages."""
     base = 'https://www.concertgebouw.nl'
     listing = safe_get(base + '/en/concerts-and-tickets')

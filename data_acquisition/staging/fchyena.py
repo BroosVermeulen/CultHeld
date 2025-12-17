@@ -7,7 +7,7 @@ from utils.http_utils import safe_get, safe_json
 logger = get_logger(__name__)
 
 
-def fchyena() -> pd.DataFrame:
+def scrape() -> pd.DataFrame:
     """Scrape FCHYENA events and return as DataFrame using robust HTTP utils."""
     try:
         resp = safe_get(fchyena_config.BASE_URL + fchyena_config.API_ENDPOINT, headers=fchyena_config.HEADERS, params=fchyena_config.QUERY_PARAMS)
@@ -146,4 +146,7 @@ def _parse_shows_from_html(html: bytes) -> pd.DataFrame:
 
     df = pd.DataFrame(events)
     return df
+
+
+ 
 

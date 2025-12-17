@@ -9,18 +9,19 @@ The `events` table in `data/core/events.duckdb` stores all events from all venue
 | Column | Type | Required | Description |
 |--------|------|----------|-------------|
 | `venue` | VARCHAR | Yes | Venue name (e.g., 'Paradiso', 'Melkweg') |
+| `event_name` | VARCHAR | No | Human-readable event title/name, if available |
 | `start_date_time` | VARCHAR | Yes | Event start date/time in format "YYYY-MM-DD HH:mm" |
 | `ticket_url` | VARCHAR | Yes | URL to purchase tickets |
-| `price` | DECIMAL | Yes | Ticket price (EUR) |
+| `price` | DECIMAL | Conditional | Ticket price (EUR). Required only for configured venues. |
 | `as_of_date` | DATE | Yes | Date when record was scraped (ISO format YYYY-MM-DD) |
 
 ### Example Records
 
 ```
-venue    | start_date_time | ticket_url                              | price | as_of_date
----------|-----------------|----------------------------------------|-------|------------
-Melkweg  | 2025-12-20 21:00| http://www.melkweg.nl/event/123        | 30    | 2025-12-16
-Paradiso | 2025-12-21 20:30| http://www.paradiso.nl/event/456       | 30    | 2025-12-16
+venue    | event_name                 | start_date_time   | ticket_url                              | price | as_of_date
+---------|----------------------------|-------------------|------------------------------------------|-------|------------
+Melkweg  | Artist X + Support         | 2025-12-20 21:00  | https://www.melkweg.nl/event/123         | 30    | 2025-12-16
+Paradiso | Club Night Y               | 2025-12-21 20:30  | https://www.paradiso.nl/event/456        | null  | 2025-12-16
 ```
 
 ### Validation Rules
@@ -29,9 +30,9 @@ All records are validated before insertion:
 - `venue`: Non-null, static value from mapper
 - `start_date_time`: Non-null, must be valid datetime string
 - `ticket_url`: Non-null, must be valid URL
-- `price`: Non-null, numeric value
+- `price`: Conditionally required for a configurable set of venues. For other venues, `price` may be null when it cannot be reliably extracted.
 
-Records failing validation are logged and excluded from the database.
+Rows failing validation are logged and excluded from the database. The set of venues requiring price is defined in `config.PRICE_REQUIRED_VENUES`.
 
 ## Update Strategy
 

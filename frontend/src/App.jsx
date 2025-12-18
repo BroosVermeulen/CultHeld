@@ -4,7 +4,10 @@ import './App.css'
 import FilterBar from './components/FilterBar.jsx'
 import EventTable from './components/EventTable.jsx'
 
-const API_BASE = 'http://localhost:8000/api'
+// Use Railway in production, localhost in development
+const API_BASE = import.meta.env.MODE === 'production' 
+  ? 'https://cultheld-production.up.railway.app/api'
+  : 'http://localhost:8000/api'
 
 function App() {
   const [events, setEvents] = useState([])

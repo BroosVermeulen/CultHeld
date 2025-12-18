@@ -76,11 +76,10 @@ function App() {
   // Fetch events - reset offset when filters change
   useEffect(() => {
     setOffset(0)
-    setEvents([])
     setHasMore(true)
   }, [filters, searchQuery])
 
-  // Fetch events when offset changes
+  // Fetch events when offset changes OR filters change
   useEffect(() => {
     const fetchEvents = async () => {
       if (offset === 0) {
@@ -93,11 +92,16 @@ function App() {
         const params = {
           offset,
           limit,
-          search: searchQuery,
           ...Object.fromEntries(
             Object.entries(filters).filter(([, v]) => v !== '')
           ),
         }
+        
+        // Only add search if it has a value
+        if (searchQuery && searchQuery.trim() !== '') {
+          params.search = searchQuery
+        }
+        
         const response = await axios.get(`${API_BASE}/events`, { params })
         
         if (offset === 0) {
@@ -117,7 +121,7 @@ function App() {
       }
     }
     fetchEvents()
-  }, [offset])
+  }, [offset, filters, searchQuery])
 
   const handleFilterChange = (newFilters) => {
     setFilters(newFilters)
@@ -127,8 +131,7 @@ function App() {
     setFilters({
       venue: '',
       event_type: '',
-      start_date: '',
-      end_date: '',
+      ...getDefaultDates(),
     })
     setSearchQuery('')
   }

@@ -2,21 +2,106 @@
   margin-bottom: 30px;
   padding: 20px;
   background-color: #f9f9f9;
+  color: #333;
   border-radius: 6px;
   border-left: 4px solid #0066cc;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:root.dark-mode .filter-bar {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  border-left-color: #4da6ff;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .filter-bar h2 {
-  margin-bottom: 15px;
+  margin: 0;
   font-size: 1.2em;
+  color: inherit;
+}
+
+.toggle-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #0066cc;
+  padding: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+:root.dark-mode .toggle-btn {
+  color: #4da6ff;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Search container - always visible */
+.search-container {
+  margin-bottom: 15px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+  background-color: white;
   color: #333;
 }
 
+:root.dark-mode .search-input {
+  background-color: #3d3d3d;
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+:root.dark-mode .search-input:focus {
+  border-color: #4da6ff;
+  box-shadow: 0 0 0 3px rgba(77, 166, 255, 0.1);
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+:root.dark-mode .search-input::placeholder {
+  color: #888;
+}
+
+/* Filter inputs - desktop visible by default */
 .filter-inputs {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
   align-items: flex-end;
+  max-height: 100%;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
 }
 
 .filter-group {
@@ -31,17 +116,148 @@
   font-size: 0.9em;
 }
 
+:root.dark-mode .filter-group label {
+  color: #a0a0a0;
+}
+
 .filter-group input,
 .filter-group select {
   width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+  background-color: white;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.2s ease;
+}
+
+:root.dark-mode .filter-group input,
+:root.dark-mode .filter-group select {
+  background-color: #3d3d3d;
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+:root.dark-mode .filter-group input:focus,
+:root.dark-mode .filter-group select:focus {
+  border-color: #4da6ff;
+  box-shadow: 0 0 0 3px rgba(77, 166, 255, 0.1);
 }
 
 .reset-btn {
   background-color: #999;
-  padding: 0.6em 1.2em;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
   align-self: flex-end;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
 }
 
 .reset-btn:hover {
   background-color: #777;
+}
+
+:root.dark-mode .reset-btn {
+  background-color: #555;
+}
+
+:root.dark-mode .reset-btn:hover {
+  background-color: #666;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .filter-bar {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  .filter-header {
+    margin-bottom: 12px;
+  }
+
+  .filter-bar h2 {
+    font-size: 1rem;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .search-container {
+    margin-bottom: 12px;
+  }
+
+  .search-input {
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+
+  /* Collapsed state */
+  .filter-inputs {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  /* Expanded state */
+  .filter-inputs.open {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+  }
+
+  :root.dark-mode .filter-inputs.open {
+    border-top-color: #555;
+  }
+
+  .filter-inputs.open {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .reset-btn {
+    width: 100%;
+    align-self: stretch;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-bar {
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+
+  .filter-bar h2 {
+    font-size: 0.95rem;
+  }
+
+  .filter-group label {
+    font-size: 0.85rem;
+  }
+
+  .filter-group input,
+  .filter-group select {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .search-input {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.95rem;
+  }
 }

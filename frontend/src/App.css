@@ -2,31 +2,92 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
+  background-color: white;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app.dark-mode {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+/* Dark mode global styles */
+:root.dark-mode {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-tertiary: #3d3d3d;
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --border-color: #444;
+  --accent: #4da6ff;
+}
+
+:root:not(.dark-mode) {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9f9f9;
+  --bg-tertiary: #f0f0f0;
+  --text-primary: #333;
+  --text-secondary: #666;
+  --border-color: #ddd;
+  --accent: #0066cc;
 }
 
 .app-header {
   text-align: center;
   margin-bottom: 40px;
   padding: 20px 0;
-  border-bottom: 2px solid #0066cc;
+  border-bottom: 2px solid var(--accent);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .app-header h1 {
   font-size: 2.5em;
   margin-bottom: 5px;
-  color: #333;
+  color: var(--text-primary);
 }
 
 .app-header p {
   font-size: 1.1em;
-  color: #666;
+  color: var(--text-secondary);
+}
+
+.dark-mode-toggle {
+  background: none;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+  background-color: var(--accent);
 }
 
 .app-main {
-  background: white;
+  background: var(--bg-primary);
   border-radius: 8px;
   padding: 30px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app.dark-mode .app-main {
+  background: var(--bg-secondary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .error-message {
@@ -38,19 +99,61 @@
   margin-bottom: 20px;
 }
 
+.app.dark-mode .error-message {
+  background-color: #3d1a1a;
+  border-color: #664444;
+  color: #ff8888;
+}
+
 .loading {
   text-align: center;
   padding: 40px;
   font-size: 1.1em;
-  color: #666;
+  color: var(--text-secondary);
+}
+
+.loading-more {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95em;
+  color: var(--text-secondary);
 }
 
 .results-info {
   margin-bottom: 20px;
-  color: #666;
+  color: var(--text-secondary);
   font-weight: 500;
 }
 
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.btn-load-more {
+  padding: 0.75rem 2rem;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-load-more:hover:not(:disabled) {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.btn-load-more:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Legacy pagination styles - kept for backwards compatibility */
 .pagination {
   display: flex;
   justify-content: center;
@@ -58,11 +161,81 @@
   align-items: center;
   margin-top: 30px;
   padding-top: 20px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--border-color);
 }
 
 .page-info {
   font-weight: 500;
   min-width: 120px;
   text-align: center;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .app {
+    padding: 12px;
+  }
+
+  .app-header {
+    margin-bottom: 30px;
+    padding: 15px 0;
+  }
+
+  .app-header h1 {
+    font-size: 1.8em;
+  }
+
+  .app-header p {
+    font-size: 1em;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .dark-mode-toggle {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+
+  .app-main {
+    padding: 20px;
+  }
+
+  .results-info {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 10px;
+  }
+
+  .app-header {
+    margin-bottom: 20px;
+    padding: 10px 0;
+  }
+
+  .app-header h1 {
+    font-size: 1.5em;
+    margin-bottom: 3px;
+  }
+
+  .app-header p {
+    font-size: 0.9em;
+  }
+
+  .app-main {
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+  .btn-load-more {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
 }

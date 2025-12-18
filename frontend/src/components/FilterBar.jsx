@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './FilterBar.css'
 
-function FilterBar({ venues, eventTypes, filters, onFilterChange, onResetFilters }) {
+function FilterBar({ venues, eventTypes, filters, onFilterChange, onResetFilters, onSearchChange, searchQuery }) {
+  const [isOpen, setIsOpen] = useState(false)
+
   const handleChange = (e) => {
     const { name, value } = e.target
     onFilterChange({
@@ -10,10 +12,43 @@ function FilterBar({ venues, eventTypes, filters, onFilterChange, onResetFilters
     })
   }
 
+  const handleSearchChange = (e) => {
+    if (onSearchChange) {
+      onSearchChange(e.target.value)
+    }
+  }
+
+  const toggleFilters = () => {
+    setIsOpen(!isOpen)
+  }
+
+  const handleResetFilters = () => {
+    onResetFilters()
+    setIsOpen(false)
+  }
+
   return (
     <div className="filter-bar">
-      <h2>Filters</h2>
-      <div className="filter-inputs">
+      <div className="filter-header">
+        <h2>Filters & Search</h2>
+        <button className="toggle-btn" onClick={toggleFilters}>
+          {isOpen ? '✕' : '☰'}
+        </button>
+      </div>
+
+      {/* Search bar - always visible */}
+      <div className="search-container">
+        <input
+          type="text"
+          placeholder="Search events..."
+          className="search-input"
+          value={searchQuery || ''}
+          onChange={handleSearchChange}
+        />
+      </div>
+
+      {/* Filter inputs - collapsible on mobile */}
+      <div className={`filter-inputs ${isOpen ? 'open' : ''}`}>
         <div className="filter-group">
           <label>Venue</label>
           <select
@@ -66,7 +101,7 @@ function FilterBar({ venues, eventTypes, filters, onFilterChange, onResetFilters
           />
         </div>
 
-        <button className="reset-btn" onClick={onResetFilters}>
+        <button className="reset-btn" onClick={handleResetFilters}>
           Reset Filters
         </button>
       </div>

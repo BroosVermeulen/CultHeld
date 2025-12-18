@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cultheld-backend"
+version = "0.1.0"
+description = "CultHeld event aggregator backend"
+authors = []
+packages = [{include = "app", from = "backend"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "0.109.0"
+uvicorn = {extras = ["standard"], version = "0.27.0"}
+duckdb = "1.0.0"
+pydantic = "2.5.3"
+pytz = "2024.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

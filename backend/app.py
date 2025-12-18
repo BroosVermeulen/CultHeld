@@ -136,7 +136,7 @@ async def get_events(
         if start_date:
             try:
                 datetime.strptime(start_date, "%Y-%m-%d")
-                filters.append("DATE(start_date_time) >= ?")
+                filters.append("CAST(start_date_time AS DATE) >= CAST(? AS DATE)")
                 params["start_date"] = start_date
             except ValueError:
                 pass
@@ -144,7 +144,7 @@ async def get_events(
         if end_date:
             try:
                 datetime.strptime(end_date, "%Y-%m-%d")
-                filters.append("DATE(start_date_time) <= ?")
+                filters.append("CAST(start_date_time AS DATE) <= CAST(? AS DATE)")
                 params["end_date"] = end_date
             except ValueError:
                 pass

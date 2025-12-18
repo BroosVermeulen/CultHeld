@@ -1,0 +1,9 @@
+[tool.poetry]
+name = "cultheld"
+version = "0.1.0"
+description = "CultHeld event aggregator"
+authors = []
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

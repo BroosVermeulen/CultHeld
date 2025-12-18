@@ -1,0 +1,47 @@
+.filter-bar {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border-left: 4px solid #0066cc;
+}
+
+.filter-bar h2 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.filter-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+}
+
+.reset-btn {
+  background-color: #999;
+  padding: 0.6em 1.2em;
+  align-self: flex-end;
+}
+
+.reset-btn:hover {
+  background-color: #777;
+}

@@ -1,0 +1,110 @@
+.table-container {
+  overflow-x: auto;
+}
+
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.event-table thead {
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #0066cc;
+}
+
+.event-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+.event-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.event-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.venue {
+  font-weight: 600;
+  color: #0066cc;
+}
+
+.event-type {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.event-type.actualiteit {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.event-type.bioscoop {
+  background-color: #f3e5f5;
+  color: #6a1b9a;
+}
+
+.event-type.concert {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+.event-type.theater {
+  background-color: #e0f2f1;
+  color: #00695c;
+}
+
+.event-type.museum {
+  background-color: #ede7f6;
+  color: #512da8;
+}
+
+.event-name {
+  font-weight: 500;
+  max-width: 300px;
+}
+
+.date {
+  color: #666;
+  font-size: 0.95em;
+  white-space: nowrap;
+}
+
+.price {
+  font-weight: 600;
+  text-align: right;
+  color: #0066cc;
+}
+
+.ticket-link {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #0066cc;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: background-color 0.2s;
+}
+
+.ticket-link:hover {
+  background-color: #0052a3;
+  text-decoration: none;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 1.1em;
+}

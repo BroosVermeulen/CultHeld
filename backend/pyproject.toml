@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "cultheld-backend"
+version = "0.1.0"
+description = "FastAPI backend for CultHeld events API"
+authors = ["Your Name <you@example.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.109.0"
+uvicorn = {extras = ["standard"], version = "^0.27.0"}
+duckdb = "^1.0.0"
+pydantic = "^2.5.0"
+python-multipart = "^0.0.6"
+python-dotenv = "^1.0.0"
+pytz = "^2024.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.0"
+httpx = "^0.25.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

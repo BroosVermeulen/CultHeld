@@ -98,12 +98,21 @@ async def get_events(
     event_type: str | None = Query(None, description="Filter by event type"),
     start_date: str | None = Query(None, description="Filter by start date (YYYY-MM-DD)"),
     end_date: str | None = Query(None, description="Filter by end date (YYYY-MM-DD)"),
-    page: int = Query(1, ge=1, description="Page number (1-indexed)"),
+    search: str | None = Query(None, description="Search in event names"),
+    page: int = Query(None, description="Page number (1-indexed) - deprecated, use offset instead"),
+    offset: int = Query(0, ge=0, description="Number of results to skip"),
     limit: int = Query(50, ge=1, le=500, description="Results per page"),
 ) -> EventsResponse:
     """Get events with optional filters and pagination."""
     try:
         con = get_db_connection()
+
+        # Support both page-based (deprecated) and offset-based pagination
+        if page is not None:
+            offset = (page - 1) * limit
+        
+        # Use page for response if provided, otherwise calculate from offset
+        response_page = page if page is not None else (offset // limit) + 1
 
         # Build base query with latest events (using window function)
         query = """
@@ -149,6 +158,11 @@ async def get_events(
             except ValueError:
                 pass
 
+        # Add search filter
+        if search:
+            filters.append("LOWER(event_name) LIKE LOWER(?)")
+            params["search"] = f"%{search}%"
+
         # Append additional filters if they exist
         if filters:
             query += " AND " + " AND ".join(filters)
@@ -157,16 +171,15 @@ async def get_events(
         count_query = f"SELECT COUNT(*) as total FROM ({query})"
         total = con.execute(
             count_query,
-            [params.get(k) for k in ["venue", "event_type", "start_date", "end_date"]
+            [params.get(k) for k in ["venue", "event_type", "start_date", "end_date", "search"]
              if k in params and params[k] is not None],
         ).fetchone()[0]
 
         # Add pagination
-        offset = (page - 1) * limit
         query += f" ORDER BY start_date_time ASC LIMIT ? OFFSET ?"
 
         # Execute query with parameters
-        param_values = [params.get(k) for k in ["venue", "event_type", "start_date", "end_date"]
+        param_values = [params.get(k) for k in ["venue", "event_type", "start_date", "end_date", "search"]
                         if k in params and params[k] is not None]
         param_values.extend([limit, offset])
 
@@ -188,7 +201,7 @@ async def get_events(
 
         return EventsResponse(
             total=total,
-            page=page,
+            page=response_page,
             limit=limit,
             events=events,
         )
@@ -198,7 +211,7 @@ async def get_events(
         traceback.print_exc()
         return EventsResponse(
             total=0,
-            page=page,
+            page=response_page if page is not None else (offset // limit) + 1,
             limit=limit,
             events=[],
         )

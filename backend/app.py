@@ -28,6 +28,8 @@ CORS_ORIGINS = [
     "http://localhost:3000",
     "https://cultheld.com",
     "http://cultheld.com",
+    "https://www.cultheld.com",
+    "http://www.cultheld.com",
     os.getenv("FRONTEND_URL", ""),  # Set this in Railway
 ]
 

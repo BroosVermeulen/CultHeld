@@ -11,8 +11,14 @@ from pydantic import BaseModel
 
 # Configuration
 # In production, use local events.duckdb; in dev, use data_acquisition path
-if os.getenv("RAILWAY_ENVIRONMENT") or os.getenv("RENDER"):
-    DB_PATH = Path(__file__).parent / "events.duckdb"
+# Check if running on Railway/Render by looking for environment indicators
+is_production = os.getenv("RAILWAY_ENVIRONMENT") or os.getenv("RENDER") or os.getenv("RAILWAY_TOKEN") or os.path.exists("/app")
+
+if is_production:
+    DB_PATH = Path("/app/backend/events.duckdb")
+    # Fallback if the above doesn't exist
+    if not DB_PATH.exists():
+        DB_PATH = Path(__file__).parent / "events.duckdb"
 else:
     DB_PATH = Path(__file__).parent.parent / "data_acquisition" / "data" / "core" / "events.duckdb"
 
@@ -60,6 +66,21 @@ class EventsResponse(BaseModel):
 def get_db_connection():
     """Get a read-only DuckDB connection."""
     return duckdb.connect(database=str(DB_PATH), read_only=True)
+
+
+@app.on_event("startup")
+async def startup_event():
+    """Log startup information."""
+    print(f"Starting CultHeld API")
+    print(f"DB_PATH: {DB_PATH}")
+    print(f"DB exists: {DB_PATH.exists()}")
+    try:
+        conn = get_db_connection()
+        result = conn.execute("SELECT COUNT(*) as count FROM events").fetchall()
+        print(f"Database connected. Total events: {result[0][0]}")
+        conn.close()
+    except Exception as e:
+        print(f"Database error on startup: {e}")
 
 
 @app.get("/health")

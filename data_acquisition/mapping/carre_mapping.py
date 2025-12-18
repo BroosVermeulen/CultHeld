@@ -8,6 +8,7 @@ def map_carre(row: dict[str, Any]) -> dict[str, Any]:
 
     # Core ordered fields
     mapped['venue'] = 'Carré'
+    mapped['event_type'] = 'Theater'
     mapped['event_name'] = row.get('title') or row.get('name')
     mapped['start_date_time'] = row.get('start_date_time')
     mapped['ticket_url'] = row.get('ticket_url') or ''

@@ -32,7 +32,9 @@ def write_core_records(
     df["as_of_date"] = as_of_date
 
     # Ensure required columns exist and enforce desired column order
-    desired_cols = ['venue', 'event_name', 'start_date_time', 'ticket_url', 'price', 'as_of_date']
+    desired_cols = [
+        'venue', 'event_type', 'event_name', 'start_date_time', 'ticket_url', 'price', 'as_of_date'
+    ]
     for col in desired_cols:
         if col not in df.columns:
             df[col] = None
@@ -52,6 +54,20 @@ def write_core_records(
     except duckdb.CatalogException:
         con.execute(f"CREATE TABLE {table_name} AS SELECT * FROM df LIMIT 0")
 
+    # Ensure schema has 'event_type'; add column if missing
+    try:
+        table_cols = [r[0] for r in con.execute(
+            f"SELECT name FROM pragma_table_info('{table_name}')"
+        ).fetchall()]
+    except Exception:
+        table_cols = []
+    if 'event_type' not in table_cols:
+        con.execute(f"ALTER TABLE {table_name} ADD COLUMN event_type VARCHAR")
+        # refresh table_cols after schema change
+        table_cols = [r[0] for r in con.execute(
+            f"SELECT name FROM pragma_table_info('{table_name}')"
+        ).fetchall()]
+
     # Delete existing rows for each venue in this batch
     for v in df["venue"].unique():
         con.execute(f"""
@@ -59,8 +75,9 @@ def write_core_records(
             WHERE venue = '{v}' AND as_of_date = '{as_of_date}'
         """)
 
-    # Insert new rows
-    con.execute(f"INSERT INTO {table_name} SELECT * FROM df")
+    # Insert new rows using explicit column list to avoid order mismatches
+    insert_cols = ", ".join(table_cols)
+    con.execute(f"INSERT INTO {table_name} ({insert_cols}) SELECT {insert_cols} FROM df")
     con.close()
 
     logger.info(

@@ -9,7 +9,12 @@ from utils.logging_config import get_logger
 
 logger = get_logger(__name__)
 
-REQUIRED_FIELDS = ['venue', 'start_date_time', 'ticket_url']
+REQUIRED_FIELDS = ['venue', 'event_type', 'start_date_time', 'ticket_url']
+
+# Allowed event types enforced by validation (Title Case)
+ALLOWED_EVENT_TYPES = {
+    'Actualiteit', 'Bioscoop', 'Concert', 'Theater', 'Museum'
+}
 
 
 def validate_records(
@@ -34,6 +39,28 @@ def validate_records(
     
     # Remove rows with null values in required fields
     df_clean = df.dropna(subset=REQUIRED_FIELDS)
+
+    # Normalize and enforce allowed event_type values
+    if 'event_type' in df_clean.columns:
+        try:
+            # Normalize to Title Case and strip whitespace
+            df_clean['event_type'] = df_clean['event_type'].astype('string')
+            df_clean['event_type'] = df_clean['event_type'].str.strip().str.capitalize()
+        except Exception:
+            # If normalization fails, proceed with raw values
+            pass
+        before = len(df_clean)
+        invalid_mask = ~df_clean['event_type'].isin(ALLOWED_EVENT_TYPES)
+        invalid_values = sorted(
+            [v for v in df_clean.loc[invalid_mask, 'event_type'].dropna().unique().tolist()]
+        )
+        df_clean = df_clean[~invalid_mask]
+        dropped = before - len(df_clean)
+        if dropped > 0:
+            logger.warning(
+                f"Removed {dropped} records with invalid event_type; allowed={sorted(ALLOWED_EVENT_TYPES)}; "
+                f"found invalid={invalid_values}"
+            )
 
     # If price is required for certain venues, enforce non-null price for those rows
     venues_requiring_price = (

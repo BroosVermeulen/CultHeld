@@ -50,6 +50,12 @@ def scrape() -> pd.DataFrame:
             for show in shows:
                 date_start = show.get('date_start', '')
                 time_start = show.get('time_start', '00:00')
+                # Try to capture a meaningful title
+                title = (
+                    show.get('title')
+                    or show.get('name')
+                    or str(movie_id)
+                )
                 # date_start in format MMDD
                 if len(date_start) == 4:
                     month = date_start[:2]
@@ -74,11 +80,19 @@ def scrape() -> pd.DataFrame:
                     'start_date_time': start_dt,
                     'ticket_url': 'https://fchyena.nl',
                     'price': 10,
+                    'title': title,
                 })
 
     df = pd.DataFrame(events)
     # Drop rows without start_date_time
     df = df.dropna(subset=['start_date_time'])
+    # Deduplicate by a sensible subset to avoid upstream duplicates
+    subset_cols = [
+        c for c in ['start_date_time', 'title', 'ticket_url', 'price'] if c in df.columns
+    ]
+    if subset_cols:
+        df = df.drop_duplicates(subset=subset_cols, keep='first')
+        df = df.reset_index(drop=True)
     return df
 
 
@@ -139,26 +153,39 @@ def _parse_shows_from_html(html: bytes) -> pd.DataFrame:
 
         # find nearest anchor (parent or next sibling)
         ticket = None
+        title_text = None
         parent = time_tag.parent
         if parent:
             a = parent.find('a', href=True)
             if a:
                 ticket = a['href']
+                # use anchor text as title when available
+                if a.text and a.text.strip():
+                    title_text = a.text.strip()
 
         if not ticket:
             # try following siblings
             sib = time_tag.find_next('a')
             if sib and sib.has_attr('href'):
                 ticket = sib['href']
+                if not title_text and sib.text and sib.text.strip():
+                    title_text = sib.text.strip()
 
         if start_dt is not None and not pd.isna(start_dt):
             events.append({
                 'start_date_time': start_dt,
                 'ticket_url': ticket or fchyena_config.BASE_URL,
                 'price': 10,
+                'title': title_text,
             })
 
     df = pd.DataFrame(events)
+    # Deduplicate HTML-parsed events as well
+    subset_cols = [
+        c for c in ['start_date_time', 'title', 'ticket_url', 'price'] if c in df.columns
+    ]
+    if subset_cols:
+        df = df.drop_duplicates(subset=subset_cols, keep='first').reset_index(drop=True)
     return df
 
 

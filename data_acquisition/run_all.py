@@ -140,4 +140,4 @@ def run_all_scrapers(force_update: bool = False) -> None:
 
 # This ensures the function runs when the script is executed directly
 if __name__ == "__main__":
-    run_all_scrapers(True)
+    run_all_scrapers()
